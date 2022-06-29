@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms to event</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Criando meu 1° evento</h1>
+      
+      <p>Preencha o formulario de avaliação da empresa.</p>
+      
+    </header>
+
+    <form id="my-form">
+
+<!-- Começo dos eventos/caixas -->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do evento</legend>
+  
+          <div class="input-wrapper">
+            <label for="event-title">Primeiro para formulario<span>(minimo de 8 caracteres)</span></label>
+            <input 
+            type="text" 
+            id="event-title"
+            required
+            minlength="8" />
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-url">Primeiro link de formulario <span>(comece com https://)</span></label>
+            <input type="url" id="event-url" />
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-number">Primeiro numero de formulario <span>(somente numeros)</span></label>
+            <input type="number" id="event-number" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-info">Informações extras</label>
+            <textarea id="event-info" ></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-category">numero de formulario> </label>
+            <select id="event-category">
+              <option value="live">Ao live</option>
+              <option value="podcast">Podcast</option>
+              <option value="mentorship">mentoria</option>
+
+            </select>
+          </div> 
+
+        </div>
+      </fieldset>
+
+<!-- Meio do codigo/privacidade e checkbox-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>privacidade do evento</legend>
+
+          <div class="input-wrapper">
+            <label for="email-administrator">E-mail do administrador<span>(digite um email válido)</span></label>
+            <input type="email" id="email-administrator"></input>
+          </div>
+
+
+          <div class="input-password-wrapper">
+            <label for="key-access">Chave de acesso para os participantes<span>(minimo de 10 caracteres)</span></label>
+            <input id="input-password-wrapper"type="password" placeholder="Digite sua senha"><img class="eye" src="https://www.svgrepo.com/show/12044/eye.svg"/>
+
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="box-private"></input>
+            <label for="box-private">Evento privado</label>
+          </div>
+
+        </div>
+      </fieldset>
+      
+<!-- Final data e hora/ caixas laterais-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Data e hora</legend>
+         
+          <div class="col-3">
+
+            <div class="input-wrapper">
+              <label for="event-date">Data</label>
+              <input type="date" id="event-date"/>
+            </div> 
+
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin"/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end"/>
+            </div>
+
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+    <footer>
+      <input 
+      class=button 
+      type="submit"
+      form="my-form"
+      value="salvar evento">
+      
+    </footer>
+  </div>
+</body>
+
+<script>
+  let btn = document.querySelector('.eye');
+  btn.addEventListener('click', function() {
+      let input = document.querySelector('#input-password-wrapper');
+      if (input.getAttribute('type') == 'password') {
+          input.setAttribute('type', 'text');
+      } else {
+          input.setAttribute('type', 'password');
+      }
+      });
+</script>
+</html>

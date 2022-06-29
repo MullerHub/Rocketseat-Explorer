@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #121214;
+
+  --base-color: 220;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+
+  --bg-sound: hsl(240, 9%, 89%);
+  --bg-sound-select: hsl(194, 97%, 31%);
+  --text-color: #ffffff;
+}
+
+#tudo {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  gap: 7rem;
+}
+ 
+body {
+  background-color: var(--base-color);
+  background: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+  gap: clamp(1rem, 10vw, 19rem);
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.contador {
+  width: 32rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play svg path,
+.pause svg path,
+.decrease svg path,
+.increase svg path {
+  fill: var(--primary-color);
+}
+
+.numeros {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+  
+}
+
+.imagensContador {
+  display: flex;
+  padding: 2px;
+  gap: 3.3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* o hide a principio não vai ser usado para esconder nenhum botão. */
+.hide {
+  background-color: red;
+}
+
+.volume {
+  background-color: blue;
+}
+
+.botoesDeAudio {
+  gap: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 31rem;
+}
+
+.botoesDeAudio path {
+  fill: black
+}
+
+.botoesDeAudio button {
+  display: flex;
+  align-items: center;
+  background: var(--bg-sound);
+  justify-content: center;
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  max-width: 13.8rem;
+  max-height: 15.2rem;
+  transition: 1s;
+}
+
+.botoesDeAudio button.select {
+  
+  background: var(--bg-sound-select);
+}
+
+.select path {
+  
+  fill: var(--bg-sound)
+
+}
+
+
+/*
+ clamp ( valor minimo, valor ideal/medio, valor maximo) 
+ "usar rem, e no ideal vw (viewwidth) e vh (viewheight)"
+*/
+@media only screen and (max-width: 670px) {
+  #tudo {
+    flex-direction: column;
+  }
+}
+
+
+

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .page {
+  margin: auto;
+}
+
+.page2 {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  text-align: center;
+  background-color: #e6e6f0;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  background-color: #293241;
+  z-index: -1;
+  height: 415px;
+  position: absolute;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+header h1 {
+  margin-top: 107px;
+  margin-bottom: 3px;
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+
+  margin-bottom: 10px;
+}
+
+header svg {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+header div {
+  background-color: #f67669;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px 8px 0 0;
+}
+
+header div p {
+  font-family: 'Staatliches';
+  font-size: 24px;
+
+  margin: auto;
+}
+
+.form-coluna {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-coluna label {
+  display: block;
+  color: #4e4958;
+}
+
+.form-coluna label span {
+  color: #c1bccc;
+  margin-left: 12px;
+}
+
+.form-coluna input {
+  width: 100%;
+  height: 55px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid #9e9ed6;
+
+  background-color: #e6e6f0;
+}
+
+.form-coluna textarea {
+  width: 100%;
+  height: 166px;
+  background-color: #e6e6f0;
+  border-radius: 8px;
+  padding: 20px 20px;
+  color: #ad4b2da6;
+}
+
+.form-coluna textarea:hover {
+  color: black;
+  text-transform: uppercase;
+  transition: 500ms;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div {
+  width: 100%;
+}
+
+.col-3 {
+  padding: 24px;
+  display: flex;
+  gap: 30px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+fieldset {
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  margin-bottom: 20px;
+  font-family: 'Staatliches';
+  font-size: 24px;
+  font-weight: 400px;
+  width: 622px;
+
+  color: #253b51;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+.check {
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin: 30px 10px;
+  color: #4e4958;
+}
+
+.check input {
+  border-radius: 80px;
+  border: 1px solid #9e9ed6;
+}
+
+button {
+  font-family: 'Staatliches';
+  font-size: 20px;
+
+  width: 622px;
+  height: 51px;
+
+  width: 80%;
+  color: #ffffff;
+  background-color: #f67669;
+
+  border-radius: 8px;
+  border-style: none;
+  margin-bottom: 20px;
+}
