@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #121214;
+
+  --base-color: 220;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+
+  --text-color: #ffffff;
+}
+
+body {
+  background-image: url(./imagens/universe.jpg);
+  color: #ffffff;
+}
