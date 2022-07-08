@@ -93,6 +93,13 @@ function removeFiveMinutes() {
   }
 }
 
+function desligaAudios() {
+  buttonFire.classList.remove('select')
+  buttonRain.classList.remove('select')
+  buttonForest.classList.remove('select')
+  buttonCoffee.classList.remove('select')
+}
+
 //chamar os dados
 play.addEventListener('click', function () {
   countdown()
@@ -114,10 +121,8 @@ menos.addEventListener('click', function () {
 })
 
 buttonForest.addEventListener('click', function () {
+  desligaAudios()
   buttonForest.classList.toggle('select')
-  buttonRain.classList.remove('select')
-  buttonCoffee.classList.remove('select')
-  buttonFire.classList.remove('select')
 
   if (isPlayAudio(forestAudio)) {
     return
@@ -130,10 +135,8 @@ buttonForest.addEventListener('click', function () {
 })
 
 buttonRain.addEventListener('click', function () {
+  desligaAudios()
   buttonRain.classList.toggle('select')
-  buttonForest.classList.remove('select')
-  buttonCoffee.classList.remove('select')
-  buttonFire.classList.remove('select')
 
   if (isPlayAudio(rainAudio)) {
     return
@@ -146,10 +149,8 @@ buttonRain.addEventListener('click', function () {
 })
 
 buttonCoffee.addEventListener('click', function () {
+  desligaAudios()
   buttonCoffee.classList.toggle('select')
-  buttonRain.classList.remove('select')
-  buttonForest.classList.remove('select')
-  buttonFire.classList.remove('select')
 
   if (isPlayAudio(coffeeAudio)) {
     return
@@ -162,10 +163,8 @@ buttonCoffee.addEventListener('click', function () {
 })
 
 buttonFire.addEventListener('click', function () {
+  desligaAudios()
   buttonFire.classList.toggle('select')
-  buttonRain.classList.remove('select')
-  buttonForest.classList.remove('select')
-  buttonCoffee.classList.remove('select')
 
   if (isPlayAudio(fireAudio)) {
     return
