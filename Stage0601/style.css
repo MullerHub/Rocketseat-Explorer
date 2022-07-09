@@ -13,10 +13,48 @@
   --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
   --primary-color: hsl(var(--base-color), 100%, 63%);
 
-  --text-color: #ffffff;
+  --nav-text: #c4c4cc;
+  --nav-hover: #ffffff;
+  --text-content: #e1e1e6;
+  --text-hover: #672020;
+  --text-p: red;
+  --text-h1: rgb(31, 170, 47);
 }
 
 body {
-  background-image: url(./imagens/universe.jpg);
-  color: #ffffff;
+  background-image: url(./imagens/mountains-universe-1.png);
+  display: grid;
+  grid-template-rows: 2rem 90vh;
+}
+
+section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+nav a {
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--nav-text);
+}
+
+section h1 {
+  color: var(--text-h1);
+}
+
+section p {
+  color: var(--text-p);
+}
+
+section button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid gold;
+  border-radius: 5rem;
+  color: var(--text-p);
 }

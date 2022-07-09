@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>framework</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>murilin node</title>
   </head>
+
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home"></a>Home</li>
-          <li><a href="#universe"></a>Universo</li>
-          <li><a href="#exploration"></a>Exploração</li>
-          <li>
-            <a href="https://www.linkedin.com/in/mullerhub/" target="_blank"
-              >Dev</a
-            >
-          </li>
-        </ul>
+    <div class="content">
+      <img src="./imagens/logo.svg"/>
+      <nav class="menu">
+          <a href="/">HOME</a>
+          <a href="./pages/universe.html" onclick="route()">UNIVERSO</a>
+          <a href="./pages/exploration.html" onclick="route()">EXPLORAÇÃOOO</a>
+          <a href="https://www.linkedin.com/in/mullerhub/" target="_blank">DEV</a>
       </nav>
-    </header>
+    </div>
+    <div id="app"></div>
 
-    <section class="inicio" id="home">
-      <h1>Explore o universo</h1>
-      <button>
-        <input type="submit" name="rota" id="route" />
-        QUERO SABER MAISSS
-      </button>
-    </section>
-
-    <section class="universo" id="universe">
-      <h1>O Universo</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum vel sapiente possimus! Labore perferendis quaerat officiis commodi laboriosam provident impedit eius a quis aliquid, at, beatae voluptatum nostrum! Dolorem, officiis?</p>
-    </section>
-
-    <section class="exploracao" id="exploration">
-      <h1>Exploração</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus magni minima asperiores. Porro iusto saepe dolorem fuga quidem accusamus, asperiores tempora iure molestiae quia nemo illum perferendis quos eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolore quaerat sunt voluptates, placeat, ipsa quis quam sapiente rem asperiores veritatis voluptatibus voluptas optio quidem illum ipsam ratione laudantium qui!</p>
-    </section>
-
+    <script src="./js/index.js" type=" module"></script>
   </body>
 </html>
