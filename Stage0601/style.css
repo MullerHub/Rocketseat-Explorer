@@ -23,14 +23,6 @@
 
 body {
   background-image: url(./imagens/mountains-universe-1.png);
-  display: grid;
-  grid-template-rows: 2rem 90vh;
-}
-
-section {
-  display: grid;
-  align-items: center;
-  justify-items: center;
 }
 
 nav a {
@@ -57,4 +49,61 @@ section button {
   border: 2px solid gold;
   border-radius: 5rem;
   color: var(--text-p);
+}
+
+.content {
+  font-size: 200%;
+  margin-top: 4rem;
+  margin-left: 3.2rem;
+  background-color: rgb(158, 41, 41);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content img {
+  background-color: red;
+  font-size: 10%;
+}
+
+.content a + a {
+  margin-left: 3.2rem;
+  gap: 333px;
+}
+
+.content a {
+  color: var(--nav-text);
+}
+
+.content a:hover {
+  color: var(--nav-hover);
+}
+
+
+section h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+section p {
+  margin-top: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.secao {
+  margin-left: 10.2rem;
+  margin-top: 18.5rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  padding: 10px;
+  padding-right: 300px;
+  line-height: 160%;
 }
