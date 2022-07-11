@@ -4,7 +4,8 @@ export class Router {
   add(nameRoute, namePage) {
     this.routes[nameRoute] = namePage
   }
-   routes(event) {
+
+  routes(event) {
     event = event || window.event
     event.preventDefault()
   
@@ -13,7 +14,7 @@ export class Router {
     this.handle()
   }
   
-   handle() {
+  handle() {
     const { pathname } = window.location
     const routes = this.routes[pathname] || this.routes[404]
     fetch(routes)

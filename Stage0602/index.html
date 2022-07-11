@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>github favorites</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Github Favorites</h1>
+        <div class="search">
+          <label class="sr-only" for="input-search">Usuario do github</label>
+          <input
+            id="input-search"
+            type="text"
+            pplaceholder="Usuário do Github"
+          />
+          <button>&plus;</button>
+        </div>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>vazio</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr>
+            <td class="user">
+                <img src="https://github.com/mullerhub.png" alt="">
+                <a href="https://github.com/MullerHub" target="_blank">
+                  <p>Murilo Muller</p>
+                  <span>MullerHub</span>
+                </a>
+            </td>
+            <td class="repositories">07 repositorios</td>
+            <td class="followers">878 seguimores</td>
+            <td><button class="remove">&times;</button></td>
+          </tr>
+          
+          <tr>
+            <td class="user">
+                <img src="https://github.com/mullerhub.png" alt="">
+                <a href="https://github.com/MullerHub" target="_blank">
+                  <p>Murilo Muller</p>
+                  <span>MullerHub</span>
+                </a>
+            </td>
+            <td class="repositories">07 repositorios</td>
+            <td class="followers">878 seguimores</td>
+            <td><button class="remove">&times;</button></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </body>
+</html>
