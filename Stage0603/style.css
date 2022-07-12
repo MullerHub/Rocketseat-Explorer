@@ -5,19 +5,17 @@
 }
 
 :root {
+  --ff-primary: 'Poppins', 'sans-serif';
+  --text-color: #E1E1E6;
+  --text-color-hover: #f12525;
+  --primary-color: #092D38;
+  --botton-primary: #065E7C;
+  --botton-secondary: #FFFFFF;
+  --table-color1: #06161B;
+  --table-color2: #4A808C;
+
   font-size: 62.5%;
-  --ff-primary: 'Poppins', 'sans-serif'
-  --text-color: #303030;
-  --primary-color: #ff009983;
-  --color-h1: #ff00f7;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-  right: 0;
-  overflow: auto;
-  padding: 3em;
-  position: absolute;
-  text-align: center;
+  margin-top: 3.5rem; 
 }
 
 body {
@@ -25,8 +23,6 @@ body {
   color: var(--text-color);
 
   background-color: rgb(0, 0, 0);
-    background-size:100%;
-    background-size: cover;
 }
 
 body * {
@@ -45,10 +41,9 @@ body * {
   border-width: 0;
 }
 
-
 #app {
   padding: 1rem;
-  max-width: 500px;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -73,9 +68,10 @@ header h1 {
 
 .search input {
   background-color: #06181C;
+  width: 190%;
   height: 3.2rem;
   color: #7C7C8A;
-  border: 1px solid #ccc;
+  border: 0px;
   border-radius: .4rem 0 0 .4rem;
   padding: 0 .8rem;
 }
@@ -88,8 +84,17 @@ header h1 {
   height: 3.2rem;
   border: none;
   padding: 0 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--botton-primary);
 }
+
+.search button:hover {
+  background-color: var(--botton-secondary);
+}
+
+.search button:hover path {
+  fill: #065E7C; 
+}
+
 
 
 .search button:hover {
@@ -105,7 +110,13 @@ table {
 
 table * {
   font-size: 1.4rem;
-  color: var(--text-color); 
+  color: var(--text-color);
+}
+
+table *:hover {
+  color: var(--text-color-hover);
+  transition: all 2s;
+  font-size: 103%;
 }
 
 table th {
@@ -129,13 +140,14 @@ table td {
 }
 
 table tr:nth-child(odd) { /* nth child odd é todos os filhos impares */
-  background: #ddd;
+  background: var(--table-color1);
 }
 
 
 table tr:nth-child(even) { /* nth child evem é todos os filhos pares */
-  background: #eee;
+  background: var(--table-color2);
 }
+
 
 td.user {
   display: flex;
@@ -160,17 +172,12 @@ td.user a p {
 }
 
 td .remove {
-  background-color: none;
+  background-color: transparent;
   border: none;
   color: red;
+  font-size: 105%;
   cursor: pointer;
 }
-
-
-
-
-
-
 
 
 
