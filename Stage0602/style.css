@@ -8,14 +8,28 @@
   font-size: 62.5%;
   --ff-primary: 'Poppins', 'sans-serif'
   --text-color: #303030;
-  --hue: 194;
-  --primary-color: hsl(var(--hue), 100%, 63%);
+  --primary-color: #ff009983;
+  --color-h1: #ff00f7;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  right: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+  text-align: center;
 }
 
 body {
   font-size: 1.6rem;
   color: var(--text-color);
-  background-color: rgba(96, 150, 150, 0.658);
+
+  background-color: rgb(0, 0, 0);
+  background-image: url('https://images.unsplash.com/photo-1657590994676-492103766137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-repeat: no-repeat;
+    background-size:100%;
+    color: black;
+    background-size: cover;
 }
 
 body * {
@@ -36,7 +50,7 @@ body * {
 
 
 #app {
-  padding: 2rem;
+  padding: 1rem;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -51,6 +65,7 @@ header {
 header h1 {
   font-size: 2rem;
   text-transform: uppercase;
+  color: var(--color-h1);
 }
 
 .search {
@@ -66,11 +81,11 @@ header h1 {
 }
 
 .search button {
-  background-color: var(--ff-primary);
   border-radius: 0 .4rem .4rem 0;
   height: 3.2rem;
   border: none;
   padding: 0 1rem;
+  background-color: var(--primary-color);
 }
 
 .search button:hover {
@@ -90,18 +105,18 @@ table * {
 }
 
 table th {
-  background-color: red;
+  background-color: var(--primary-color);
   text-align: left;
   font-weight: normal;
   padding: 1.5rem;
 }
 
 table th:first-child {
-  border-top-left-radius: .4rem;
+  border-top-left-radius: .8rem;
 }
 
 table th:last-child {
-  border-top-right-radius: -4rem;
+  border-top-right-radius: .8rem;
 }
 
 table td {
@@ -146,10 +161,6 @@ td .remove {
   color: red;
   cursor: pointer;
 }
-
-
-
-
 
 
 

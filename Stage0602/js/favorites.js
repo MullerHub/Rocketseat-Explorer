@@ -41,15 +41,17 @@ export class Favorites {
   }
 
   delete(user) {
-    const entradasFiltradas = this.entradas.filter(
+    const filtroEntradas = this.entradas.filter(
       entry => entry.login !== user.login
     )
 
-    this.entradas = entradasFiltradas
+    this.entradas = filtroEntradas
     this.update()
     this.save()
   }
 }
+
+// classe que vai criar a visualização e eventos do HTML
 
 export class FavoritesView extends Favorites {
   constructor(root) {
@@ -76,14 +78,13 @@ export class FavoritesView extends Favorites {
 
       row.querySelector('.user img').src = `
       https://github.com/${user.login}.png`
-
-      row.querySelector('.user img').src = `https.github.com/${user.login}.png`
-      row.querySelector('.user img').alt = `Imagenação de ${user.name}`
+      row.querySelector('.user img').alt = `Imagem de ${user.name}`
       row.querySelector('.user a').href = `https://github.com/${user.login}`
       row.querySelector('.user p').textContent = user.name
       row.querySelector('.user span').textContent = user.login
       row.querySelector('.repositories').textContent = user.public_repos
       row.querySelector('.followers').textContent = user.followers
+      
       row.querySelector('.remove').onclick = () => {
         const isOk = confirm('tem certeza que deseja deletar esse user?')
         if (isOk) {
@@ -98,7 +99,7 @@ export class FavoritesView extends Favorites {
   createRow() {
     const tr = document.createElement('tr')
 
-    tr.conteudoHTML = `
+    tr.innerHTML = `
       <td class="user">
       <img src="https://github.com/mullerhub.png" alt="imagem de murilin">
       <a href="https://github.com/MullerHub" target="_blank">
