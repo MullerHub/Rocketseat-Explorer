@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-primary: 'Poppins', 'sans-serif'
+  --text-color: #303030;
+  --primary-color: #ff009983;
+  --color-h1: #ff00f7;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  right: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+  text-align: center;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+  background-color: rgb(0, 0, 0);
+    background-size:100%;
+    background-size: cover;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only { /* esconde texto para leitor ler */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* pesquisar os significado */
+  border-width: 0;
+}
+
+
+#app {
+  padding: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-h1);
+}
+
+.search {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  background-color: #06181C;
+  height: 3.2rem;
+  color: #7C7C8A;
+  border: 1px solid #ccc;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0 .4rem .4rem 0;
+  height: 3.2rem;
+  border: none;
+  padding: 0 1rem;
+  background-color: var(--primary-color);
+}
+
+
+.search button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* retirar todos espaços da tabela */
+  box-shadow: 0 1rem 2rem hsl(var(--hue), 100%, 63%) rgba(0, 0, 0, 0.3); /* fazer sombras */
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color); 
+}
+
+table th {
+  background-color: var(--primary-color);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .8rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .8rem;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table tr:nth-child(odd) { /* nth child odd é todos os filhos impares */
+  background: #ddd;
+}
+
+
+table tr:nth-child(even) { /* nth child evem é todos os filhos pares */
+  background: #eee;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background-color: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
