@@ -13,55 +13,63 @@
   --text-upper: font-family: 'JetBrains Mono', monospace;
   --text-low: font-family: 'Open Sans', sans-serif;
 }
+
 body {
   background-color: var(--bg-color);
-}
-
-header {
-  display: flex;
-  margin: 1rem;
-  justify-content: space-between;
-}
-
-header ul {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  list-style-type: none;
-}
-
-header ul li a {
-  
-  font-family: var(--text-upper);
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-  color: var(--h1-color);
 }
 
 .page {
   position: relative;
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
-  margin: 10px;
-  padding: 20px;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+  margin: 1rem 1rem;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 4.5rem;
+  list-style-type: none;
+}
+
+header ul li a {  
+  font-family: var(--text-upper);
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--h1-color);
 }
 
 .page img {
   position: relative;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
   object-fit: contain;
   padding: 30px;
 }
 
 .page .text {
-  margin: 20px;
-  background-color: black;
+  margin: 2rem;
+  margin-top: 6rem;
   align-self: center;
+  padding: 2rem
 }
 
 .page .text p {
-  font-size: 16px;
+  margin: 7rem;
+  text-align: center;
+  font-size: 2rem;
+
+  margin-right: 7rem;
   color: #C2C2C2;
 }
 
@@ -79,8 +87,9 @@ header ul li a {
 footer svg {
   position: absolute;
   margin: 5px;
-  margin-top: 30px;
+  margin-top: 4rem;
   left: 0;
+  bottom: 0;
 }
 
 footer p {
@@ -89,11 +98,20 @@ footer p {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.5rem;
   color: #FFFFFF;
-  margin-top: 30px;
+  margin-top: 4rem;
 }
 
+footer a {
+  color: aqua;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #00a08b;
+  font-size: 120%;
+}
 
 
 
