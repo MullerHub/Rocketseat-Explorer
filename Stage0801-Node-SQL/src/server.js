@@ -17,6 +17,7 @@ app.use(routes)
 /* 
 Database();  trocado pelos dados internos abaixo
  */
+
 migrationsRun()
 
 app.use((error, request, response, next) => {

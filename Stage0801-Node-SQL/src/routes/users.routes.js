@@ -9,8 +9,7 @@ function myMidlewarre(request, response, next) {
   console.log("iniciou o server");
   
   next();
-} 
-*/
+}  */
 
 const usersController = new UsersController()
 
