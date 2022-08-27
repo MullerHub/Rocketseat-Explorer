@@ -19,6 +19,8 @@ RENAME COLUMN ~nome da tabela~ TO ~nome novo~
 
 ---
 
+
+
 DELETAR coluna
 
 ALTER TABLE ~nome da tabela~
