@@ -6,16 +6,16 @@
 
 :root {
   --ff-primary: 'Poppins', 'sans-serif';
-  --text-color: #E1E1E6;
+  --text-color: #e1e1e6;
   --text-color-hover: #f12525;
-  --primary-color: #092D38;
-  --botton-primary: #065E7C;
-  --botton-secondary: #FFFFFF;
-  --table-color1: #06161B;
-  --table-color2: #4A808C;
+  --primary-color: #092d38;
+  --botton-primary: #065e7c;
+  --botton-secondary: #ffffff;
+  --table-color1: #06161b;
+  --table-color2: #4a808c;
 
   font-size: 62.5%;
-  margin-top: 3.5rem; 
+  margin-top: 3.5rem;
 }
 
 body {
@@ -29,7 +29,8 @@ body * {
   font-family: var(--ff-primary);
 }
 
-.sr-only { /* esconde texto para leitor ler */
+.sr-only {
+  /* esconde texto para leitor ler */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -67,20 +68,20 @@ header h1 {
 }
 
 .search input {
-  background-color: #06181C;
+  background-color: #06181c;
   width: 190%;
   height: 3.2rem;
-  color: #7C7C8A;
+  color: #7c7c8a;
   border: 0px;
-  border-radius: .4rem 0 0 .4rem;
-  padding: 0 .8rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding: 0 0.8rem;
 }
 
 .search button {
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-radius: 0 .4rem .4rem 0;
+  border-radius: 0 0.4rem 0.4rem 0;
   height: 3.2rem;
   border: none;
   padding: 0 1rem;
@@ -92,10 +93,8 @@ header h1 {
 }
 
 .search button:hover path {
-  fill: #065E7C; 
+  fill: #065e7c;
 }
-
-
 
 .search button:hover {
   filter: brightness(1.1);
@@ -127,11 +126,11 @@ table th {
 }
 
 table th:first-child {
-  border-top-left-radius: .8rem;
+  border-top-left-radius: 0.8rem;
 }
 
 table th:last-child {
-  border-top-right-radius: .8rem;
+  border-top-right-radius: 0.8rem;
 }
 
 table td {
@@ -139,22 +138,21 @@ table td {
   text-align: left;
 }
 
-table tr:nth-child(odd) { /* nth child odd é todos os filhos impares */
+table tr:nth-child(odd) {
+  /* nth child odd é todos os filhos impares */
   background: var(--table-color1);
 }
 
-
-table tr:nth-child(even) { /* nth child evem é todos os filhos pares */
+table tr:nth-child(even) {
+  /* nth child evem é todos os filhos pares */
   background: var(--table-color2);
 }
-
 
 td.user {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 
 td.user img {
   width: 5rem;
@@ -178,21 +176,3 @@ td .remove {
   font-size: 105%;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

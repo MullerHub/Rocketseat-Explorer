@@ -1,4 +1,5 @@
 RENOMEAR nomes de tabelas
+
 ALTER TABLE ~nome da tabela~
 RENAME TO ~nome novo~
 

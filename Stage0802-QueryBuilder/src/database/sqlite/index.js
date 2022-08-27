@@ -15,5 +15,3 @@ async function sqliteConnection() {
 module.exports = sqliteConnection
 
 // SGBD - SISTEMA GERENCIADOR DE BANCO DE DADOS (APP RECOMENDADO= BEEKEEPER)
-
-

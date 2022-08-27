@@ -12,7 +12,7 @@ header {
   position: absolute;
   width: 377px;
   height: auto;
-  background-color: #8E9AAF;
+  background-color: #8e9aaf;
 }
 
 body {
@@ -35,8 +35,8 @@ header h1 {
   font-size: 40px;
   padding: 5px;
   width: 100%;
-  background-color: #CBC0D3;
-  color: #FFFFFF;
+  background-color: #cbc0d3;
+  color: #ffffff;
 }
 
 header p {
@@ -50,24 +50,23 @@ header p {
   padding: 40px 30px;
 
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .grid {
-  display: grid;  
+  display: grid;
   margin: auto 382px;
   width: 1085px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-  "img1 img2 img3"
-  "img4 img2 img6"
-  "img4 img5 img6"
-  ;
+    'img1 img2 img3'
+    'img4 img2 img6'
+    'img4 img5 img6';
 }
 
-.img{
+.img {
   width: 100%;
   border-radius: 30px;
 }
@@ -93,25 +92,22 @@ header p {
 }
 
 #img6 {
-  grid-area:img6;
+  grid-area: img6;
 }
 
 .grid {
-  display: grid;  
+  display: grid;
   margin: auto 382px;
   width: 1085px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-  "img1 img2 img3"
-  "img4 img2 img6"
-  "img4 img5 img6"
-  ;
+    'img1 img2 img3'
+    'img4 img2 img6'
+    'img4 img5 img6';
 }
 
 footer {
   font-family: 'Open Sans', sans-serif;
-  
-  
 }
