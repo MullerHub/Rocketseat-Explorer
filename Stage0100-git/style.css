@@ -32,6 +32,9 @@ span {
 
 .footer {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer a {
@@ -42,16 +45,10 @@ span {
   gap: 70px;
 }
 
-.footer a + a {
-  margin-right: 28px;
-  gap: 50px;
-}
-
 .line {
-  width: 568px;
-  height: 0px;
+  width: 90vw;
   border: 1px rgba(78, 66, 66, 0.4) solid;
-  margin: 0px auto 8px;
+  margin-top: 0;
 }
 
 .balls {
