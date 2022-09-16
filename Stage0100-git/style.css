@@ -30,19 +30,32 @@ span {
   color: #ff9900;
 }
 
-.footer {
+footer {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.footer a {
+footer div {
+  margin-top: 1rem;
   display: inline-flex;
-  color: rgb(188, 95, 38);
   font-size: 14px;
   line-height: 28px;
-  gap: 70px;
+  gap: 1rem;
+}
+
+footer a {
+  color: rgb(188, 95, 38);
+  list-style: none;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+  transition: 2s;
 }
 
 .line {
