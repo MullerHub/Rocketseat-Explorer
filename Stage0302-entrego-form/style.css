@@ -206,13 +206,11 @@ footer .button {
   font-weight: 600;
   line-height: 26px;
   font-size: 16px;
-
   border-radius: 12px;
-
   background-color: #04d361;
   height: 56px;
-
   color: #ffffff;
+  border: transparent;
 }
 
 footer .button:hover {
