@@ -12,6 +12,7 @@ body {
 .page {
   width: auto;
   margin: auto;
+  font-family: 'Mulish', sans-serif;
 }
 
 nav {
@@ -21,8 +22,11 @@ nav {
 }
 
 main {
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 8rem;
 }
 
 ul {
@@ -33,32 +37,30 @@ ul {
   padding: 0px;
 }
 
+main div{ 
+  display: flex;
+  gap: 5rem;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main div div {
+  display: flex;
+  flex-direction: column;
+}
 ul li a {
   color: #1f1534;
   text-decoration: none;
 }
 
-a {
-  color: #1f1534;
-  text-decoration: none;
-}
-
 ul li a:hover {
-  font-weight: bold;
+  color: #410ab8;
+  font-size: calc(1rem + 2px);
+  font: bold;
+  transition: 1.4s;
 }
 
-h1,
-ul {
-  font-family: 'Mulish', sans-serif;
-}
-
-main {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10rem;
-}
 
 h1 {
   font-size: 49px;
@@ -98,6 +100,7 @@ button {
 
 button:hover {
   background-color: #36a37d;
+  transition: 2s;
 }
 
 footer {
@@ -111,10 +114,28 @@ footer {
 
 footer a {
   font-weight: bold;
+  color: rgb(252, 175, 31);
+}
+
+footer a:hover {
+  color: rgb(153, 100, 0);
+  font-size: calc(1rem + 1px);
+  transition: 3s;
 }
 
 .balls {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main div {
+    display: flex;
+    flex-direction: column;
+  }
 }
