@@ -54,10 +54,9 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+div a:hover {
   color: #410ab8;
   font-size: calc(1rem + 2px);
-  font: bold;
   transition: 1.4s;
 }
 

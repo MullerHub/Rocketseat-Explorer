@@ -15,7 +15,7 @@ body {
   padding: 5rem 2.3rem;
 }
 
-body main div {
+main div {
   margin-top: 0.1rem;
   max-width: 33rem;
   margin: 0 auto;
@@ -31,48 +31,52 @@ body p:first-child {
   color: #7158ef;
 }
 
-
-body main div h1 {
+main div h1 {
   font-weight: 800;
   font-size: 4rem;
   line-height: 4.8rem;
   margin-bottom: 1.5rem;
 }
 
-body main div p {
+main div p {
   font-size: 1.6rem;
   line-height: 3.2rem;
   color: rgba(10, 0, 57, 0.64);
 }
 
-body main div a {
+main div a {
   font-size: 1.6rem;
   line-height: 3.2rem;
   text-decoration: none;
-
   color: #090039;
 }
 
-body main div a:hover {
-  color: #160096;
-  font-weight: bold;
+main div a:hover {
+  color: #2600ff;
+  font-size: 2rem;
+  transition: 1.3s;
 }
 
-body ul {
+main ul {
   list-style: none;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: -95px;
+  align-items: center;
+  justify-content: center;
 }
 
-body main ul li {
+main ul li {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.2rem;
 
   gap: 3.5rem;
   max-width: 25.7rem;
-
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 body main ul li + li {
@@ -100,8 +104,11 @@ body main ul li span {
     max-width: 484px;
   }
 
-  ul li {
-    gap: 5.3rem;
+  main ul {
+    margin-left: 5px;
+  }
+
+  main ul li {
     max-width: 400px;
     align-items: center;
   }
