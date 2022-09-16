@@ -60,8 +60,7 @@ header svg {
 
 header div {
   background-color: #f67669;
-  height: 100px;
-
+  height: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,9 +112,9 @@ header div p {
 }
 
 .form-coluna textarea:hover {
-  color: black;
-  text-transform: uppercase;
-  transition: 500ms;
+  color: rgb(161, 0, 0);
+  font-size: 1rem;
+  transition: 1.5s;
 }
 
 .col-2 {
@@ -171,14 +170,16 @@ button {
   font-family: 'Staatliches';
   font-size: 20px;
 
-  width: 622px;
+  width: 100%;
   height: 51px;
-
-  width: 80%;
   color: #ffffff;
   background-color: #f67669;
-
   border-radius: 8px;
   border-style: none;
   margin-bottom: 20px;
+}
+button:hover {
+  font-size: calc(20px + 3px);
+  background-color: rgb(255, 32, 66);
+  transition: 1.5s;
 }
