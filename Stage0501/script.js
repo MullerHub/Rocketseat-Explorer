@@ -100,10 +100,18 @@ function desligaAudios() {
   buttonCoffee.classList.remove('select')
 }
 
+
+let conta = false
 //chamar os dados
 play.addEventListener('click', function () {
-  countdown()
-  setInterval(() => {}, contagem) /* else {
+  if (!conta) {
+    countdown()
+    
+    setInterval(() => {}, contagem)
+  } else {
+    conta = true
+  }
+  /* else {
                        clearTimeout(contagem)    Parar o contador
                        } */
 })
