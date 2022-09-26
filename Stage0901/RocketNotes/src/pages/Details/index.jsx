@@ -17,8 +17,8 @@ export function Details() {
           <li>Item 3</li>
         </Links>
       </Section>
-      <Section title="Links úteis" >
-        
+      <Section title="Marcadores" >
+      
       </Section>
 
       <Button title="Voltar" />
