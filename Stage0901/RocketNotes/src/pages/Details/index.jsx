@@ -4,7 +4,7 @@ export function Details() {
   return(
     <>
     <Container >
-    <h1>Hello guy's</h1>
+     <h1>Hello guy's</h1>
     </Container>
     </>
   )
