@@ -1,3 +1,5 @@
 import styles from 'styled-components'
 
-const Container = styles.div
+export const Container = styles.div`
+  background: red;
+`
