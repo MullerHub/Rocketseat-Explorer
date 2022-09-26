@@ -1,4 +1,4 @@
-export default function App() {
+export default function Details() {
 
   return(
     <h1>Hello guy's</h1>
