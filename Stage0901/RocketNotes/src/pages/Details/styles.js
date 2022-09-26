@@ -1,5 +1,5 @@
-import styles from 'styled-components'
+import styled from 'styled-components'
 
-export const Container = styles.div`
+export const Container = styled.div`
   background: red;
 `
