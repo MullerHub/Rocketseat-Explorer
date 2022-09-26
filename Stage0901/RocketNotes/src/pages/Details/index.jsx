@@ -17,6 +17,10 @@ export function Details() {
           <li>Item 3</li>
         </Links>
       </Section>
+      <Section title="Links úteis" >
+        
+      </Section>
+
       <Button title="Voltar" />
     </Container >
   )
