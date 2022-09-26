@@ -1,4 +1,4 @@
-import {Container} from './styles'
+import {Container, Links} from './styles'
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
@@ -11,11 +11,11 @@ export function Details() {
     <Container >
       <Header/>
       <Section title="Links úteis" >
-        <ul>
+        <Links>
           <li>Item 1</li>
           <li>Item 2</li>
           <li>Item 3</li>
-        </ul>
+        </Links>
       </Section>
       <Button title="Voltar" />
     </Container >
