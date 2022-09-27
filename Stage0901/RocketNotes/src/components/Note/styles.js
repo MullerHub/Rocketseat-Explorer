@@ -11,5 +11,6 @@ export const Container = styled.button`
     flex: 1;
     text-align: left;
     font-weight: 700;
+    font-size: 24px;
   }
 `
