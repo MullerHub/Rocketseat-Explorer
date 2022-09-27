@@ -9,5 +9,6 @@ export const Container = styled.button`
 
   > h1 {
     flex: 1;
+    text-align: left;
   }
 `
