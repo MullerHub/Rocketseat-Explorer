@@ -8,5 +8,6 @@ export const Container = styled.button`
   border-radius: 10px;
 
   > h1 {
+    flex: 1;
   }
 `
