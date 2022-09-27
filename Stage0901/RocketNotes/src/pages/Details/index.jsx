@@ -10,6 +10,9 @@ export function Details() {
   return(
     <Container >
       <Header/>
+
+    <main>
+    <Content>
       <ButtonText title="Excluir nota" />
       <Section title="Links úteis" >
         <Links>
@@ -23,6 +26,8 @@ export function Details() {
       </Section>
 
       <Button title="Voltar" />
+    </Content>
+  </main>
     </Container >
   )
 }
