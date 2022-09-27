@@ -21,3 +21,5 @@ export const Links = styled.ul`
     }
   }
 `
+
+export const Content = styled.div``
