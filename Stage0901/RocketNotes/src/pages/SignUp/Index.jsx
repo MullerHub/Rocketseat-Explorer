@@ -7,6 +7,7 @@ import { Background, Container, Form } from './styles'
 export function SignUp() {
   return (
     <Container>
+      <Background />
       <Form>
         <h1>Rocket Notes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
@@ -16,9 +17,8 @@ export function SignUp() {
         <Input placeholder="Senha" type="password" icon={FiLock} />
         <Button title="Entrar" />
 
-        <a href="#">Criar conta</a>
+        <a href="#">Voltar para o login</a>
       </Form>
-      <Background />
     </Container>
   )
 }
