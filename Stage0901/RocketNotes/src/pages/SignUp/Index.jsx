@@ -4,7 +4,7 @@ import { FiMail, FiLock } from 'react-icons/fi'
 
 import { Background, Container, Form } from './styles'
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <Form>
