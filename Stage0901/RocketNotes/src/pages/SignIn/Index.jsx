@@ -11,11 +11,11 @@ export function SignIn() {
         <h1>Rocket Notes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
         <h2>Faça seu login</h2>
-      </Form>
 
-      <Input placeholder="E-mail" type="text" icon={FiMail} />
-      <Input placeholder="Senha" type="password" icon={FiLock} />
-      <Button title="Entrar" />
+        <Input placeholder="E-mail" type="text" icon={FiMail} />
+        <Input placeholder="Senha" type="password" icon={FiLock} />
+        <Button title="Entrar" />
+      </Form>
     </Container>
   )
 }
