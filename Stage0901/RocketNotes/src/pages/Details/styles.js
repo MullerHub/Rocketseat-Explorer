@@ -8,6 +8,12 @@ export const Container = styled.div`
   grid-template-areas:
     'header'
     'content';
+
+  > main {
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 64px 0;
+  }
 `
 
 export const Links = styled.ul`
