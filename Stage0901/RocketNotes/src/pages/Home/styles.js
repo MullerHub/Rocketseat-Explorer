@@ -51,7 +51,6 @@ export const Search = styled.ul`
 
 export const Content = styled.div`
   grid-area: content;
-  background: blue;
 `
 
 export const NewNote = styled.button`
