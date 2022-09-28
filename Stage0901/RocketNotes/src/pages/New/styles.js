@@ -11,5 +11,6 @@ export const Container = styled.div`
     'content';
 `
 export const Form = styled.form`
-  width: 100%;
+  max-width: 550px;
+  margin: 38px auto;
 `
