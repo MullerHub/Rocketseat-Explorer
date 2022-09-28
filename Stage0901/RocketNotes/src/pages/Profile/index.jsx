@@ -11,20 +11,20 @@ export function Profile() {
         <a href="/">
           <FiArrowLeft />
         </a>
+      </header>
+
+      <Form>
         <Avatar>
           <img
             src="https://www.github.com/mullerhub.png"
             alt="Foto de perfil"
           />
-          <label>
+          <label htmlFor="avatar">
             <FiCamera />
 
-            <input id="avatar" />
+            <input id="avatar" type="file" />
           </label>
         </Avatar>
-      </header>
-
-      <Form>
         <Input placeholder="Nome" type="text" icon={FiUser} />
         <Input placeholder="E-mail" type="text" icon={FiMail} />
         <Input placeholder="Senha atual" type="password" icon={FiLock} />
