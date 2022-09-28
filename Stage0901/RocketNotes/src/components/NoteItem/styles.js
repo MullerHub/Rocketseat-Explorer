@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
 
   background-color: ${({ theme, isNew }) =>
-    isNew ? 'transparent' : theme.COLORS.BACKGROUNG_900};
+    isNew ? 'transparent' : theme.COLORS.BACKGROUND_900};
 
   color: ${({ theme }) => theme.COLORS.GRAY_100};
 
@@ -21,6 +21,12 @@ export const Container = styled.div`
     background: none;
   }
 
+  .button-delete {
+  }
+
+  .button-add {
+  }
+
   > input {
     height: 56px;
     width: 100%;
@@ -33,7 +39,7 @@ export const Container = styled.div`
     border: none;
 
     &::placeholder {
-      color: ${({ theme }) => theme.COLORS.GRAY_300};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }
 `

@@ -4,6 +4,7 @@ import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
 import { NoteItem } from '../../components/NoteItem'
+import { Section } from '../../components/Section'
 
 export function New() {
   return (
@@ -18,9 +19,14 @@ export function New() {
           </header>
           <Input placeholder="Titulo" />
           <Textarea placeholder="Observações" />
+
+          <Section title="Links úteis" >
+            <NoteItem value="httsd.rabanete.frito.auaua" />
+            <NoteItem value="httsd.rabanete.frito.auaua" isNew />
+
+          </Section>
         </Form>
       </main>
-      <NoteItem />
 
     </Container>
   )
