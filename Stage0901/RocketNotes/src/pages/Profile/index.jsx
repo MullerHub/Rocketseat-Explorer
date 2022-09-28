@@ -1,5 +1,7 @@
 import { Container } from './styles'
-import { FiArrowLeft } from 'react-icons/fi'
+import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi'
+
+import { Input } from '../../components/Input'
 
 export function Profile() {
   return (
