@@ -11,7 +11,9 @@ export function Profile() {
         <a href="/">
           <FiArrowLeft />
         </a>
-        <Avatar>aaa</Avatar>
+        <Avatar>
+          <img />
+        </Avatar>
       </header>
 
       <Form>
