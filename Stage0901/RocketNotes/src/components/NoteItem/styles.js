@@ -17,5 +17,12 @@ export const Container = styled.div`
   padding-right: 16px;
 
   > button {
+    border: none;
+    background: none;
+  }
+
+  > input {
+    height: 56px;
+    width: 100%;
   }
 `
