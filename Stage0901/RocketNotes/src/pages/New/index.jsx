@@ -3,6 +3,7 @@ import { Container, Form } from './styles'
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
+import { NoteItem } from '../../components/NoteItem'
 
 export function New() {
   return (
@@ -19,6 +20,8 @@ export function New() {
           <Textarea placeholder="Observações" />
         </Form>
       </main>
+      <NoteItem />
+
     </Container>
   )
 }
