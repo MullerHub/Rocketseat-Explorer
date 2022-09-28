@@ -27,14 +27,27 @@ export const Form = styled.form`
 export const Avatar = styled.div`
   position: relative;
   margin: 0 auto 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 186px;
+  height: 186px;
 
-  img {
+  > img {
     border-radius: 50%;
     width: 186px;
     height: 186px;
+  }
+
+  > label {
+    width: 48px;
+    height: 48px;
+    background-color: orange;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+  }
+
+  input {
+    display: none;
   }
 `
