@@ -1,5 +1,5 @@
 import { Container, Form, Avatar } from './styles'
-import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi'
+import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -16,6 +16,11 @@ export function Profile() {
             src="https://www.github.com/mullerhub.png"
             alt="Foto de perfil"
           />
+          <label>
+            <FiCamera />
+
+            <input id="avatar" />
+          </label>
         </Avatar>
       </header>
 
