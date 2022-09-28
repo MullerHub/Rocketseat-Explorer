@@ -25,7 +25,6 @@ export const Form = styled.form`
 `
 
 export const Avatar = styled.div`
-  width: 100%;
   position: relative;
   margin: 0 auto 32px;
   display: flex;
@@ -34,7 +33,8 @@ export const Avatar = styled.div`
   flex-direction: column;
 
   img {
-    border-radius: 24px;
-    width: 100%;
+    border-radius: 50%;
+    width: 186px;
+    height: 186px;
   }
 `
