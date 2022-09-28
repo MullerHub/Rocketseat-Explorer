@@ -15,6 +15,7 @@ export function Profile() {
 
       <Form>
         <Input placeholder="Nome" type="text" icon={FiUser} />
+        <Input placeholder="E-mail" type="text" icon={FiMail} />
       </Form>
     </Container>
   )
