@@ -59,6 +59,7 @@ export const Content = styled.div`
 export const NewNote = styled(Link)`
   grid-area: newnote;
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  color: ${({ theme }) => theme.COLORS.BACKGROUNG_900};
   border: none;
 
   display: flex;
