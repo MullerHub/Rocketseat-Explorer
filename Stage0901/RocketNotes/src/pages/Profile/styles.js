@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from '../../assets/linus.jpeg'
 
 export const Container = styled.div`
   width: 100%;
@@ -29,4 +30,5 @@ export const Avatar = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 24px;
+  background: url(${Image}) no-repeat center center;
 `
