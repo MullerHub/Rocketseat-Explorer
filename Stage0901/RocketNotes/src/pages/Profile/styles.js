@@ -30,5 +30,4 @@ export const Avatar = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 24px;
-  background: url(${Image}) no-repeat center center;
 `

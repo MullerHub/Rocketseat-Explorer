@@ -11,7 +11,12 @@ export function Profile() {
         <a href="/">
           <FiArrowLeft />
         </a>
-        <Avatar></Avatar>
+        <Avatar>
+          <img
+            src="https://www.github.com/mullerhub.png"
+            alt="Foto de perfil"
+          />
+        </Avatar>
       </header>
 
       <Form>
