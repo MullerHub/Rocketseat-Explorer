@@ -26,6 +26,8 @@ export const Form = styled.form`
 
 export const Avatar = styled.div`
   width: 100%;
+  position: relative;
+  margin: 0 auto 32px;
   display: flex;
   align-items: center;
   justify-content: center;
