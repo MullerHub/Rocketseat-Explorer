@@ -5,6 +5,7 @@ import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
 import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
+import { Button } from '../../components/Button'
 
 export function New() {
   return (
@@ -31,6 +32,7 @@ export function New() {
               <NoteItem isNew placeholder="Novo Link" />
             </div>
           </Section>
+          <Button title="Salvar" />
         </Form>
       </main>
 

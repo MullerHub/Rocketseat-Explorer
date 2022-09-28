@@ -10,6 +10,11 @@ export const Container = styled.div`
     'header'
     'content';
 
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
+
   .tags {
     display: flex;
     gap: 5px;
