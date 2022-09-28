@@ -3,7 +3,7 @@ import { FiPlus, FiX } from 'react-icons/fi'
 
 export function NoteItem({ insNew, value, onClick, ...rest }) {
   return (
-    <Container>
+    <Container insNew={insNew}>
       <div>
 
       </div>
