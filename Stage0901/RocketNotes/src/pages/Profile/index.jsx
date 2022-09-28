@@ -19,6 +19,8 @@ export function Profile() {
         <Input placeholder="E-mail" type="text" icon={FiMail} />
         <Input placeholder="Senha atual" type="password" icon={FiLock} />
         <Input placeholder="Nova senha" type="password" icon={FiLock} />
+
+        <Button title="Salvar" />
       </Form>
     </Container>
   )
