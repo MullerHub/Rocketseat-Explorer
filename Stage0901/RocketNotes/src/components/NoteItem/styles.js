@@ -22,9 +22,11 @@ export const Container = styled.div`
   }
 
   .button-delete {
+    color: ${({ theme }) => theme.COLORS.RED};
   }
 
   .button-add {
+    color: ${({ theme }) => theme.COLORS.ORANGE};
   }
 
   > input {
@@ -39,7 +41,7 @@ export const Container = styled.div`
     border: none;
 
     &::placeholder {
-      color: ${({ theme }) => theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_300};
     }
   }
 `

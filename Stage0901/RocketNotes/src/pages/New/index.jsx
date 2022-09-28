@@ -21,8 +21,8 @@ export function New() {
           <Textarea placeholder="Observações" />
 
           <Section title="Links úteis" >
-            <NoteItem value="httsd.rabanete.frito.auaua" />
-            <NoteItem value="httsd.rabanete.frito.auaua" isNew />
+            <NoteItem value="www.instagram.com/dj.muller_" />
+            <NoteItem isNew placeholder="Novo Link" />
 
           </Section>
         </Form>
