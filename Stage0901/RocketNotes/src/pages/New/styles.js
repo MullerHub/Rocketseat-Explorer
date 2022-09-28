@@ -10,3 +10,6 @@ export const Container = styled.div`
     'header'
     'content';
 `
+export const Form = styled.form`
+  width: 100%;
+`
