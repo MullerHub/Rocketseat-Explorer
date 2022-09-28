@@ -39,15 +39,27 @@ export const Avatar = styled.div`
   > label {
     width: 48px;
     height: 48px;
-    background-color: orange;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_100};
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     position: absolute;
     bottom: 7px;
     right: 7px;
-  }
+    cursor: pointer;
 
-  input {
-    display: none;
+    input {
+      display: none;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    }
   }
 `
