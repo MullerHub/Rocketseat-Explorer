@@ -23,7 +23,13 @@ export function New() {
           <Section title="Links úteis" >
             <NoteItem value="www.instagram.com/dj.muller_" />
             <NoteItem isNew placeholder="Novo Link" />
+          </Section>
 
+          <Section title="Marcadores" >
+            <div className='tags'>
+              <NoteItem value="React" />
+              <NoteItem isNew placeholder="Novo Link" />
+            </div>
           </Section>
         </Form>
       </main>
