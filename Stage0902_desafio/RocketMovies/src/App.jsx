@@ -1,13 +1,12 @@
 // import reactLogo from './assets/react.svg'
 import { Container } from 'react-bootstrap'
-import './App.css'
 
 function App() {
 
   return (
     <>
       <Container>
-        <div></div>
+        <div>anakim</div>
       </Container>
     </>
   )
