@@ -14,7 +14,7 @@ ADD status VARCHAR
 
 MUDAR nome de colunas na tabela
 
-ALTER TABLE ~nome da tabela~
+ALTER TABLE (nome da tabela)
 RENAME COLUMN ~nome da tabela~ TO ~nome novo~
 
 ---
