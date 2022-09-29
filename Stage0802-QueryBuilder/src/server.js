@@ -7,7 +7,6 @@ const AppError = require('./utils/AppError')
 const express = require('express')
 
 const routes = require('./routes')
-const { Database } = require('sqlite')
 
 const app = express()
 app.use(express.json())
@@ -15,6 +14,7 @@ app.use(express.json())
 app.use(routes)
 
 /* 
+const { Database } = require('sqlite')
 Database();  trocado pelos dados internos abaixo
  */
 
