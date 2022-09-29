@@ -7,7 +7,7 @@ RENAME TO ~nome novo~
 
 Adicionar colunas na tabela
 
-ALTER TABLE ~nome da tabela~
+ALTER TABLE (nome da tabela)
 ADD status VARCHAR
 
 ---
