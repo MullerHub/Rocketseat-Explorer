@@ -1,12 +1,16 @@
-import { Container } from './styles'
+import { Container, Perfil } from './styles'
 
 export function Header() {
-  <Container>
-    <h1>RocketMovies</h1>
-    <input />
-    <strong>Murilo Muller</strong>
-    <span>Sair</span>
-    <a > aaa<img src='https://www.mullerhub.com' /></a>
+  return (
 
-  </Container>
+    <Container>
+      <h1>RocketMovies</h1>
+      <input />
+      <strong>Murilo Muller</strong>
+      <span>Sair</span>
+      <a>
+        <Perfil src='https://www.github.com/mullerhub.png'></Perfil>
+      </a>
+    </Container>
+  )
 }
