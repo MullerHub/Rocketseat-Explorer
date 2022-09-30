@@ -20,7 +20,6 @@ export function Header() {
           </a>
         </div>
       </Container>
-      <Button title="anaquim" />
     </>
   )
 }

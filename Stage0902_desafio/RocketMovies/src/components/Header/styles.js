@@ -22,8 +22,6 @@ export const Container = styled.div`
     gap: 20px;
     align-items: center;
 
-    border: 2px solid green;
-
     > div {
       max-width: 100px;
       display: flex;
