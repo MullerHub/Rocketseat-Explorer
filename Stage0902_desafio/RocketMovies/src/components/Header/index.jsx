@@ -10,10 +10,9 @@ export function Header() {
       <Input placeholder="Pesquisar pelo titulo" icon={BiSearchAlt2} />
       <div>
         <div>
-          <strong>Murilo Muller</strong>
+          <p>Murilo da Silva</p>
           <a>Sair</a>
         </div>
-
 
         <a>
           <Perfil src='https://www.github.com/mullerhub.png'></Perfil>
