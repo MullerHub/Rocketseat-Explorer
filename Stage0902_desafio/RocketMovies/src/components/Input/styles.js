@@ -4,20 +4,24 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_950};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-  margin-bottom: 8px;
+
   border-radius: 10px;
 
   > input {
     height: 56px;
     width: 100%;
 
-    padding: 12px;
-
     color: ${({ theme }) => theme.COLORS.WHITE};
     background: transparent;
+    padding: 12px;
     border: 0;
+
+    &:placeholder {
+      color: ${({ theme }) =>
+        theme.COLORS.RED}; // ARRUMAR PARA GRAY_300 QUANDO POSSIVEL
+    }
   }
 `

@@ -7,7 +7,7 @@ export function Header() {
 
     <Container>
       <h1>RocketMovies</h1>
-      <Input placeholder='Pesquisar pelo titulo' icon={BiSearchAlt2} />
+      <Input placeholder="Pesquisar pelo titulo" icon={BiSearchAlt2} />
       <div>
         <div>
           <strong>Murilo Muller</strong>
