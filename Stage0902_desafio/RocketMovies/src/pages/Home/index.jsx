@@ -1,9 +1,12 @@
-import { Container } from './styles'
+import { Container, Teste } from './styles'
 
 export function Home() {
   return (
     <Container>
-      <div>kimm</div>
+      <Teste>
+        <h1>kimm</h1>
+        <p>testeeee</p>
+      </Teste>
     </Container>
   )
 }
