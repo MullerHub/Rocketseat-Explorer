@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 `
 
@@ -18,7 +18,7 @@ export const Form = styled.form`
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 
     button {
       width: 50%;
