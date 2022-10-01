@@ -15,7 +15,14 @@ export const Container = styled.div`
     height: 32px;
     flex-direction: column;
 
+    h1 {
+      white-space: nowrap;
+    }
+
     section {
+      background-color: red;
+      max-width: 100%;
+      gap: 5px;
       display: flex;
     }
   }

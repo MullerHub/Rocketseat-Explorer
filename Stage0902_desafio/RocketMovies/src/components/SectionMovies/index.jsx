@@ -1,6 +1,6 @@
 import { Input } from '../Input'
 import { Container } from './styles'
-import { BiSearchAlt2 } from 'react-icons/bi'
+import { FiMail } from 'react-icons/fi'
 
 export function SectionMovies({ title, subtitle, value, ...rest }) {
   return (
@@ -10,11 +10,11 @@ export function SectionMovies({ title, subtitle, value, ...rest }) {
         <h1>{title}</h1>
 
         <section>
-          <BiSearchAlt2 />
-          <BiSearchAlt2 />
-          <BiSearchAlt2 />
-          <BiSearchAlt2 />
-          <BiSearchAlt2 />
+          <FiMail />
+          <FiMail />
+          <FiMail />
+          <FiMail />
+          <FiMail />
         </section>
       </header>
 
