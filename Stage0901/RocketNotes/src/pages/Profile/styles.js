@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Image from '../../assets/linus.jpeg'
 
 export const Container = styled.div`
   width: 100%;

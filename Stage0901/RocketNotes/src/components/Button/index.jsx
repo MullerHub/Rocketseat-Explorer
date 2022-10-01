@@ -1,14 +1,14 @@
-import {Container} from './styles'
+import { Container } from './styles'
 
-export function Button({title, loading= false, ...rest}) {
+export function Button({ title, loading = false, ...rest }) {
 
-  return(
-    <Container 
-    type='button'
-    disabled={loading}
+  return (
+    <Container
+      type='button'
+      disabled={loading}
     >
 
-    {loading ? 'Carregando...' : title}
-   </Container>
-    )
+      {loading ? 'Carregando...' : title}
+    </Container>
+  )
 }
