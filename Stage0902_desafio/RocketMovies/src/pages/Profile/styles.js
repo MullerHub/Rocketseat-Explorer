@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   > header {
     width: 100%;
@@ -16,7 +19,7 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
