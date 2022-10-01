@@ -6,12 +6,21 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   > header {
+    width: 100%;
     height: 144px;
     display: flex;
     align-items: center;
     padding: 0 58px;
     background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
   }
+`
+
+export const Form = styled.form`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 export const Avatar = styled.div`

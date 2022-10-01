@@ -1,5 +1,4 @@
-import { Form } from 'react-bootstrap'
-import { Container, Avatar } from './styles'
+import { Container, Form, Avatar } from './styles'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
@@ -17,11 +16,11 @@ export function Profile() {
       <Form>
         <Avatar >
           <img src="https://www.github.com/mullerhub.png" alt="Foto do usuario" />
-          <label >
+          <label htmlFor='avatar' >
+            <FiCamera />
 
+            <input id='avatar' type='file' />
           </label>
-
-          <FiCamera />
         </Avatar>
 
         <Input placeholder="Nome de usuario" type="text" icon={FiUser} />
