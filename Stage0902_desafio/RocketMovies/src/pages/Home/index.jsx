@@ -13,7 +13,11 @@ export function Home() {
         <Button icon={FiMail} title="Adicionar filme" />
       </div>
 
-      <SectionMovies title="teste" input="teste" > <p>lkkkkk</p></SectionMovies>
+      <SectionMovies title="teste" input="teste" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo voluptas explicabo quod, mollitia numquam officiis veniam necessitatibus laudantium consequuntur aut officia sequi esse dignissimos modi! Rem voluptate a excepturi.
+      Obcaecati eius voluptate impedit est laudantium quasi provident eveniet dolor culpa a nam cumque blanditiis, mollitia sequi delectus iure in nihil sapiente veritatis corporis incidunt. Suscipit ex vero provident dicta.
+      Ducimus delectus placeat repudiandae repellat eligendi maiores temporibus quasi reiciendis quo! Veritatis temporibus magnam dolor minima, itaque aliquid? Vitae, in asperiores iusto consequuntur a perspiciatis! Mollitia, molestiae odio. Mollitia, incidunt."  >
+        {console.log("section entrou")}
+      </SectionMovies>
 
 
     </Container>

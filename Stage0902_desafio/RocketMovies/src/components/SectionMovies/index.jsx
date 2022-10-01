@@ -1,17 +1,20 @@
 import { Input } from '../Input'
 import { Container } from './styles'
 
-export function SectionMovies({ title, value, ...rest }) {
-  <Container>
-    <header>
-      {title}
+export function SectionMovies({ title, subtitle, value, ...rest }) {
+  return (
 
-      <img src="https://github.com/MullerHub.png" alt="" />
-    </header>
+    <Container>
+      <header>
+        {title}
 
-    <p>{subtitle}</p>
+        <img src="https://github.com/MullerHub.png" alt="" />
+      </header>
 
-    <Input placeholder="Nome de usuario" type="text" />
+      <p>{subtitle}</p>
 
-  </Container>
+      <Input placeholder="Nome de usuario" type="text" />
+
+    </Container>
+  )
 }
