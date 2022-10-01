@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 0 80px;
   gap: 64px;
+  border-bottom: 2px solid ${({ theme }) => theme.COLORS.GRAY_300};
 
   > h1 {
     font-weight: 700;

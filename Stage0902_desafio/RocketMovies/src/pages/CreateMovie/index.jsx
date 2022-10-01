@@ -9,12 +9,13 @@ import { Textarea } from '../../components/TextArea'
 export function CreateMovie() {
   return (
     <Container>
+      <Header />
       <Form>
 
-        <Header />
-        <i> Voltar</i>
+        <a> ⏎ Voltar</a>
 
         <Content>
+          <h1>Novo filme</h1>
           <div>
             <Input placeholder="teste" type="text" />
             <Input placeholder="teste 123" type="text" />
@@ -33,7 +34,7 @@ export function CreateMovie() {
 
 
         <footer>
-          <Button title="Exccluir filme" />
+          <Button title="Excluir filme" />
           <Button title="Salvar alterações" />
         </footer>
       </Form >
