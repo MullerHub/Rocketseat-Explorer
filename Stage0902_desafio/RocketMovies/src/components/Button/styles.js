@@ -8,6 +8,7 @@ export const Container = styled.button`
   border-radius: 10px;
   font-weight: 500;
   padding: 0 16px;
+  display: flex;
   border: none;
 
   &:disabled {
