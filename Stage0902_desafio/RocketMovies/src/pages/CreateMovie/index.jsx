@@ -3,6 +3,7 @@ import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { AiOutlinePlus, AiOutlineClose } from 'react-icons/ai'
+import { Textarea } from '../../components/TextArea'
 
 export function CreateMovie() {
   return (
@@ -15,7 +16,7 @@ export function CreateMovie() {
           <Input placeholder="teste" type="text" />
           <Input placeholder="teste 123" type="text" />
         </div>
-        <Input placeholder="KJFKFGJSDJKGFSDLKGLJSKDGLJSJKLGSD" type="textarea" />
+        <Textarea placeholder="Testando" />
       </Content>
 
       <Marcadores>
