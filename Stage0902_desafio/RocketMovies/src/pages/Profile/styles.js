@@ -13,8 +13,15 @@ export const Container = styled.div`
     height: 144px;
     display: flex;
     align-items: center;
-    padding: 0 58px;
+    padding: 0 148px;
+    color: ${({ theme }) => theme.COLORS.BUTTON};
+    gap: 5px;
+
     background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
+
+    svg {
+      color: ${({ theme }) => theme.COLORS.BUTTON};
+    }
   }
 `
 
@@ -28,7 +35,6 @@ export const Form = styled.form`
   justify-content: center;
 
   > div:nth-child(4) {
-    background-color: blue;
     margin-top: 20px;
   }
 
