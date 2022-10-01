@@ -17,10 +17,21 @@ export const Section = styled.section`
     border: 2px solid yellow;
     margin-bottom: 30px;
 
+    a {
+      display: flex;
+      margin-bottom: 20px;
+      color: ${({ theme }) => theme.COLORS.BUTTON};
+    }
+
     div {
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
       gap: 10px;
+
+      svg {
+        fill: ${({ theme }) => theme.COLORS.BUTTON};
+      }
 
       img {
         width: 20px;
