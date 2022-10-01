@@ -13,3 +13,7 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
   }
 `
+
+export const Avatar = styled.div`
+  width: 100%;
+`
