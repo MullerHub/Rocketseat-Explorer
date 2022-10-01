@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   max-width: 100%;
   max-height: 100%;
-  margin: 30px 90px;
+  margin: 32px;
   gap: 50px;
 
   background-color: ${({ theme }) => theme.COLORS.BUTTON_BG_1};
@@ -26,8 +26,8 @@ export const Container = styled.div`
 
     section {
       max-width: 100%;
-      gap: 5px;
       display: flex;
+      gap: 5px;
 
       svg {
         fill: pink;
