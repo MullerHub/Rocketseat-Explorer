@@ -2,6 +2,8 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 import { Background, Container, Form } from './styles'
+import { FiMail } from 'react-icons/fi'
+import { RiLockPasswordLine } from 'react-icons/ri'
 
 export function SignUp() {
   return (
