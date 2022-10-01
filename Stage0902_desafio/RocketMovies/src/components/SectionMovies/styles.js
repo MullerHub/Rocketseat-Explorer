@@ -4,15 +4,16 @@ export const Container = styled.div`
   max-width: 100%;
   max-height: 100%;
   margin: 30px 90px;
+  gap: 50px;
+
   background-color: ${({ theme }) => theme.COLORS.BUTTON_BG_1};
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 
   > header {
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 32px 0;
     display: flex;
     width: 217px;
     height: 32px;
@@ -20,31 +21,47 @@ export const Container = styled.div`
 
     h1 {
       white-space: nowrap;
+      font-weight: 700;
     }
 
     section {
-      background-color: red;
       max-width: 100%;
       gap: 5px;
       display: flex;
+
+      svg {
+        fill: pink;
+      }
     }
   }
 
   p {
-    background-color: black;
+    white-space: var(3, 15);
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    font-weight: 400;
+
     overflow: hidden;
-    white-space: pre-wrap;
+    display: -webkit-box;
     text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    text-align: justify;
   }
 
   > div {
     display: flex;
     gap: 10px;
     max-width: 100%;
-    border: 10px solid green;
+    margin-bottom: 32px;
 
     button {
       max-width: 100%;
+      height: 34px;
+
+      text-transform: uppercase;
+      border-radius: 10px;
+
       background-color: ${({ theme }) => theme.COLORS.GRAY_300};
       color: ${({ theme }) => theme.COLORS.WHITE};
     }

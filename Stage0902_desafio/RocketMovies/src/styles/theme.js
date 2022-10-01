@@ -10,8 +10,8 @@ export default {
     BUTTON_BG: 'RGBA(255,133,155,0.6)',
     BUTTON_BG_1: 'RGBA(255,133,155,0.1)',
     BUTTON_BG_2: '#282124',
-    BUTTON_BG_3: '#312E38',
 
+    GRAY_400: '#312E38',
     GRAY_300: '#666360',
 
     RED: '#FF002E'
