@@ -14,7 +14,7 @@ export const Container = styled.div`
     justify-content: space-between;
 
     button {
-      max-width: 100px;
+      max-width: 100%;
     }
   }
 `
