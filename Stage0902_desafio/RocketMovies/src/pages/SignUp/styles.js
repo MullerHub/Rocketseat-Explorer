@@ -20,7 +20,7 @@ export const Form = styled.form`
 
   > h1 {
     font-size: 48px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.BUTTON};
   }
 
   > h2 {
@@ -35,7 +35,7 @@ export const Form = styled.form`
 
   > a {
     margin-top: 84px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.BUTTON};
   }
 `
 
@@ -43,5 +43,5 @@ export const Background = styled.div`
   flex: 1;
   background: url(${backgroundImg}) no-repeat center center;
   background-size: cover;
-  opacity: 0.4443542343634643623;
+  opacity: 0.7;
 `
