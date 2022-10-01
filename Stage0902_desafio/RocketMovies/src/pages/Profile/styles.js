@@ -5,8 +5,11 @@ export const Container = styled.div`
   height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
-  > a {
-    width: 1000px;
-    background-color: blue;
+  > header {
+    height: 144px;
+    display: flex;
+    align-items: center;
+    padding: 0 58px;
+    background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
   }
 `
