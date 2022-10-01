@@ -10,11 +10,9 @@ export const Section = styled.section`
   width: 100%;
   height: 100%;
   margin: 30px 0 20px 0;
-  border: 2px solid green;
   padding: 20px 120px 150px 120px;
 
   > div {
-    border: 2px solid yellow;
     margin-bottom: 30px;
 
     a {
@@ -44,8 +42,6 @@ export const Section = styled.section`
     }
   }
   > section {
-    border: 2px solid red;
-
     div {
       display: flex;
       gap: 15px;
