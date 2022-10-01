@@ -1,10 +1,13 @@
-import { Container, Form } from './styles'
-
+import { Container, Section } from './styles'
+import { Header } from '../../components/Header'
 
 export function MoviePreview() {
   return (
     <Container>
-      {/*   <Header />  */}
+      <Header />
+      <Section>
+
+      </Section>
     </Container>
   )
 }
