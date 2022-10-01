@@ -17,7 +17,7 @@ export function SignUp() {
         <Input placeholder="Senha" type="password" />
         <Button title="Cadastrar" />
 
-        <Link to="/" >Voltar para o login</Link>
+        <a to="/" >Voltar para o login</a>
       </Form>
     </Container>
   )

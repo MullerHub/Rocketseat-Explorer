@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import backgroundImg from '../../assets/rocketMovie.png'
 
 export const Container = styled.div`
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: stretch;

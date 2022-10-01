@@ -4,14 +4,14 @@ import ReactDOM from 'react-dom/client'
 import theme from './styles/theme'
 import React from 'react'
 
-import { SignIn } from './pages/SignIn/Index'
+import { SignUp } from './pages/SignUp/Index'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <SignIn />
+      <SignUp />
     </ThemeProvider>
   </React.StrictMode>
 )
