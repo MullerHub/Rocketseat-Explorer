@@ -13,7 +13,7 @@ export function Home() {
         <Button icon={FiMail} title="Adicionar filme" />
       </div>
 
-      <SectionMovies />
+      <SectionMovies title="teste" input="teste" > <p>lkkkkk</p></SectionMovies>
 
 
     </Container>
