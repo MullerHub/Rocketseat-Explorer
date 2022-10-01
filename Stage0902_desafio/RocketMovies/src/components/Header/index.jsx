@@ -1,25 +1,24 @@
 import { Input } from '../Input'
-import { Container, Perfil } from './styles'
+import { Container, Perfil, Section } from './styles'
 import { BiSearchAlt2 } from 'react-icons/bi'
 import { Button } from '../Button'
 
 export function Header() {
   return (
-    <>
-      <Container>
-        <h1>RocketMovies</h1>
-        <Input placeholder="Pesquisar pelo titulo" icon={BiSearchAlt2} />
-        <div>
-          <div>
-            <p>Murilo da Silva</p>
-            <a>Sair</a>
-          </div>
+    <Container>
+      <h1>RocketMovies</h1>
+      <Input placeholder="Pesquisar pelo titulo" icon={BiSearchAlt2} />
 
-          <a>
-            <Perfil src='https://www.github.com/mullerhub.png'></Perfil>
-          </a>
+      <Section>
+        <div>
+          <p>Murilo da Silva</p>
+          <a>Sair</a>
         </div>
-      </Container>
-    </>
+
+        <a>
+          <Perfil src='https://www.github.com/mullerhub.png'></Perfil>
+        </a>
+      </Section>
+    </Container>
   )
 }
