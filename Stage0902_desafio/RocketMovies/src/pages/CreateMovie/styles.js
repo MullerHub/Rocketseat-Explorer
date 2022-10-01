@@ -49,7 +49,8 @@ export const Content = styled.section`
 
 export const Marcadores = styled.section`
   h2 {
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.GRAY_300};
+    margin: 30px 0 15px 0;
   }
 
   > div {
