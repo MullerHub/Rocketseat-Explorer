@@ -13,16 +13,45 @@ export const Section = styled.section`
   border: 2px solid green;
   padding: 20px 120px 150px 120px;
 
-  p {
-    text-align: justify;
-  }
-
   > div {
     border: 2px solid yellow;
+    margin-bottom: 30px;
 
     div {
       display: flex;
       align-items: center;
+      gap: 10px;
+
+      img {
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+      }
+      h1 {
+        margin: 10px 0;
+      }
+    }
+  }
+  > section {
+    border: 2px solid red;
+
+    div {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      button {
+        background: #282124;
+        color: white;
+        height: 35px;
+
+        text-transform: uppercase;
+        font-size: 70%;
+      }
+    }
+
+    p {
+      text-align: justify;
     }
   }
 `
