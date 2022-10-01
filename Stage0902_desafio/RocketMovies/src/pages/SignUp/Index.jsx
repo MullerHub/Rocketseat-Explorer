@@ -6,7 +6,6 @@ import { Background, Container, Form } from './styles'
 export function SignUp() {
   return (
     <Container>
-      <Background />
       <Form>
         <h1>RocketMovies</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
@@ -19,6 +18,7 @@ export function SignUp() {
 
         <a to="/" >Voltar para o login</a>
       </Form>
+      <Background />
     </Container>
   )
 }

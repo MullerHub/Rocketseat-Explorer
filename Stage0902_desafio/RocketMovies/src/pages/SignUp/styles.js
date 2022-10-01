@@ -26,6 +26,9 @@ export const Form = styled.form`
   > h2 {
     font-size: 24px;
     margin: 48px 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
   }
 
   > p {
