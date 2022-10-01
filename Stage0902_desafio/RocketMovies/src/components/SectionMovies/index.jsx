@@ -11,7 +11,7 @@ export function SectionMovies({ title, value, ...rest }) {
 
     <p>{subtitle}</p>
 
-    <Input />
+    <Input placeholder="Nome de usuario" type="text" />
 
   </Container>
 }
