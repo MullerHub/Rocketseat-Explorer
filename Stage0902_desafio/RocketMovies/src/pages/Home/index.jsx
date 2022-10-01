@@ -12,6 +12,8 @@ export function Home() {
         <Button icon={FiMail} title="Adicionar filme" />
       </div>
 
+
+
     </Container>
   )
 }
