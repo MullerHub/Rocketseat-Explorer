@@ -33,6 +33,8 @@ export const Container = styled.div`
 
   > div {
     display: flex;
+    gap: 10px;
+    max-width: 100%;
     border: 10px solid green;
 
     div {
