@@ -3,7 +3,8 @@ import { Button } from '../../components/Button'
 
 import { Background, Container, Form } from './styles'
 import { FiMail } from 'react-icons/fi'
-import { RiLockPasswordLine } from 'react-icons/ri'
+import { BiArrowBack } from 'react-icons/bi'
+import { RiLockPasswordLine, RiUserStarFill } from 'react-icons/ri'
 
 export function SignUp() {
   return (
@@ -13,12 +14,12 @@ export function SignUp() {
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
         <h2>Crie sua conta</h2>
 
-        <Input placeholder="Nome" type="text" />
-        <Input placeholder="E-mail" type="text" />
-        <Input placeholder="Senha" type="password" />
+        <Input placeholder="Nome" type="text" icon={RiUserStarFill} />
+        <Input placeholder="E-mail" type="text" icon={FiMail} />
+        <Input placeholder="Senha" type="password" icon={RiLockPasswordLine} />
         <Button title="Cadastrar" />
 
-        <a to="/" >Voltar para o login</a>
+        <a to="/" /* icon={BiArrowBack} */ >Voltar para o login</a>
       </Form>
       <Background />
     </Container>
