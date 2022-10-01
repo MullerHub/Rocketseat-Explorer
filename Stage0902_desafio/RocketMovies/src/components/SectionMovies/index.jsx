@@ -1,6 +1,6 @@
 import { Container } from './styles'
 
-export function SectionMovies() {
+export function SectionMovies({ ...rest }) {
   <Container>
     <div>
       anaa
