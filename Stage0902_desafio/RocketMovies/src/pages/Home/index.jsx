@@ -1,12 +1,16 @@
 import { Container, Teste } from './styles'
+import { Header } from '../../components/Header'
+import { Button } from '../../components/Button'
 
 export function Home() {
   return (
     <Container>
-      <Teste>
-        <h1>kimm</h1>
-        <p>testeeee</p>
-      </Teste>
+      <Header />
+      <div>
+        <h1>Meus filmes</h1>
+        <Button />
+      </div>
+
     </Container>
   )
 }
