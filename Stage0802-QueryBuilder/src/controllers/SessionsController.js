@@ -12,6 +12,12 @@ class SessionController {
       throw new AppError('E-mail e/ou senha incorreta', 401)
     }
 
+    const passwordMatched = await compare(password, user.password)
+
+    if (!passwordMatched) {
+      throw new AppError('E-mail e/ou senha incorreta', 401)
+    }
+
     return response.json(user)
   }
 }
