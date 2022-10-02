@@ -8,7 +8,6 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   > div {
-    border-top: 2px solid blue;
     display: flex;
     padding: 10px 90px;
     justify-content: space-between;

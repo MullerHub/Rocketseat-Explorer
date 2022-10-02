@@ -1,7 +1,6 @@
 import { Input } from '../Input'
 import { Container, Perfil, Section } from './styles'
 import { BiSearchAlt2 } from 'react-icons/bi'
-import { Button } from '../Button'
 
 export function Header() {
   return (
