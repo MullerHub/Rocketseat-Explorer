@@ -5,4 +5,4 @@ class SessionController {
   }
 }
 
-module.exports = SessionsController
+module.exports = SessionController

@@ -7,7 +7,7 @@ class NotesController {
 
     const note_id = await /* create */ knex('notes').insert({
       title,
-      description, 
+      description,
       user_id
     })
 
@@ -30,7 +30,7 @@ class NotesController {
 
     await knex('tags').insert(tagsInsert)
 
-    response.json()
+    return response.json()
   }
 
   async show(request, response) {
