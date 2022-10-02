@@ -21,3 +21,5 @@ class diskStorage {
     await fs.promises.unlink(filePath)
   }
 }
+
+module.exports = DiskStorage
