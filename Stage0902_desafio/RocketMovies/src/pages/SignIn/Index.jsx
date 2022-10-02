@@ -4,6 +4,7 @@ import { Button } from '../../components/Button'
 import { Background, Container, Form } from './styles'
 import { FiMail } from 'react-icons/fi'
 import { RiLockPasswordLine } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 export function SignIn() {
   return (
@@ -16,9 +17,12 @@ export function SignIn() {
 
         <Input placeholder="E-mail" type="text" icon={FiMail} />
         <Input placeholder="Senha" type="password" icon={RiLockPasswordLine} />
-        <Button title="Entrar" />
 
-        <a to="/register">Criar conta</a>
+        <Link to="/perfil" >
+          <Button title="Entrar" />
+        </Link>
+
+        <Link to="/">Criar conta</Link>
 
       </Form>
       <Background />

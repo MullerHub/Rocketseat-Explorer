@@ -16,10 +16,25 @@ export const Container = styled.div`
       max-width: 100%;
     }
   }
-`
 
-export const Teste = styled.section`
-  width: 100%;
-  height: 150px;
-  background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
+  > section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+  }
+
+  > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+
+    > a {
+      text-decoration: none;
+      color: pink;
+    }
+  }
 `

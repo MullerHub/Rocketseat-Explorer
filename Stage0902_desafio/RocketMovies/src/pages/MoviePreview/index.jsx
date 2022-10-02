@@ -3,6 +3,7 @@ import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
 import { MdOutlineWatchLater } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 export function MoviePreview() {
   return (
@@ -10,10 +11,10 @@ export function MoviePreview() {
       <Header />
       <Section>
         <div>
-          <a> ⏎ Voltar</a>
+          <Link to="/"> ⏎ Voltar</Link>
 
           <div>
-            <h1>Interestellar</h1>
+            <h1>A loucademia de policia 2</h1>
             <BsStarFill />
             <BsStarFill />
             <BsStarFill />

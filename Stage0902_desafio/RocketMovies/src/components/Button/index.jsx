@@ -5,7 +5,6 @@ export function Button({ icon: Icon, title, loading = false, ...rest }) {
     <Container
       type='button'
       disabled={loading}
-
     >
 
       {Icon && <Icon size={20} />}

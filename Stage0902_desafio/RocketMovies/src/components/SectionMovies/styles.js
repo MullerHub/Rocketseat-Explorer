@@ -19,6 +19,14 @@ export const Container = styled.div`
     height: 32px;
     flex-direction: column;
 
+    a {
+      color: white;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
     h1 {
       white-space: nowrap;
       font-weight: 700;

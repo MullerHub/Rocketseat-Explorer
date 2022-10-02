@@ -1,6 +1,7 @@
 import { Input } from '../Input'
 import { Container, Perfil, Section } from './styles'
 import { BiSearchAlt2 } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
@@ -11,12 +12,12 @@ export function Header() {
       <Section>
         <div>
           <p>Murilo da Silva</p>
-          <a>Sair</a>
+          <Link to="/register">Sair</Link>
         </div>
 
-        <a>
+        <Link to="/perfil">
           <Perfil src='https://www.github.com/mullerhub.png'></Perfil>
-        </a>
+        </Link>
       </Section>
     </Container>
   )

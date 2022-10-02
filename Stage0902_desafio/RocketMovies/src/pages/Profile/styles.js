@@ -17,8 +17,11 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.BUTTON};
     gap: 5px;
 
-    background-color: ${({ theme }) => theme.COLORS.BUTTON_BG};
+    background-color: ${({ theme }) => theme.COLORS.BUTTON_BG_1};
 
+    > a {
+      color: ${({ theme }) => theme.COLORS.BUTTON};
+    }
     svg {
       color: ${({ theme }) => theme.COLORS.BUTTON};
     }

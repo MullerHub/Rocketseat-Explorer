@@ -1,13 +1,16 @@
 import { Button } from '../Button'
 import { Container } from './styles'
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export function SectionMovies({ title, subtitle, value, ...rest }) {
   return (
 
     <Container>
       <header>
-        <h1>{title}</h1>
+        <Link to="/filme">
+          <h1>{title}</h1>
+        </Link>
 
         <section>
           <BsStarFill />

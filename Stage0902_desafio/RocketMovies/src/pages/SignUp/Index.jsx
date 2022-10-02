@@ -5,6 +5,7 @@ import { Background, Container, Form } from './styles'
 import { FiMail } from 'react-icons/fi'
 import { BiArrowBack } from 'react-icons/bi'
 import { RiLockPasswordLine, RiUserStarFill } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 export function SignUp() {
   return (
@@ -17,9 +18,9 @@ export function SignUp() {
         <Input placeholder="Nome" type="text" icon={RiUserStarFill} />
         <Input placeholder="E-mail" type="text" icon={FiMail} />
         <Input placeholder="Senha" type="password" icon={RiLockPasswordLine} />
-        <Button title="Cadastrar" />
+        <Button title="Cadastrar" to="/" />
 
-        <a to="/" /* icon={BiArrowBack} */ >Voltar para o login</a>
+        <Link to="/login" /* icon={BiArrowBack} */ >Voltar para o login</Link>
       </Form>
       <Background />
     </Container>

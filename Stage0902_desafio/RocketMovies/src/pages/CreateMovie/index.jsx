@@ -5,6 +5,7 @@ import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { Textarea } from '../../components/TextArea'
+import { Link } from 'react-router-dom'
 
 export function CreateMovie() {
   return (
@@ -12,7 +13,7 @@ export function CreateMovie() {
       <Header />
       <Form>
 
-        <a> ⏎ Voltar</a>
+        <Link to="/"> ⏎ Voltar</Link>
 
         <Content>
           <h1>Novo filme</h1>
