@@ -6,9 +6,7 @@ const ensureAuthenticated = require('../middlewares/ensureAuthenticated')
 
 const userRoutes = Router()
 
-/*   function myMidlewarre(request, response, next) {
-        console.log("iniciou o server");
-        next(); }  */
+const upload = multer(uploadConfig.MULTER)
 
 const usersController = new UsersController()
 
