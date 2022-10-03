@@ -7,9 +7,7 @@ const UsersController = require('../controllers/UsersController')
 const ensureAuthenticated = require('../middlewares/ensureAuthenticated')
 
 const userRoutes = Router()
-
 const upload = multer(uploadConfig.MULTER)
-
 const usersController = new UsersController()
 
 userRoutes.post('/', usersController.create)
@@ -18,7 +16,7 @@ userRoutes.patch(
   '/avatar',
   ensureAuthenticated,
   upload.single('avatar'),
-  (req, res) => {
+  (request, response) => {
     console.log(request.file.filename)
     response.json()
   }
