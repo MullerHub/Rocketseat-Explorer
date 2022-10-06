@@ -38,9 +38,13 @@ export const Form = styled.form`
   }
 
   button {
-    width: 250px;
-    height: 100px;
-    background-color: red;
+    width: 350px;
+    height: 80px;
+    margin-top: 30px;
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
   }
 `
 

@@ -60,7 +60,9 @@ export function SignUp() {
         />
 
         <button
-          title="Cadastrar" type='button' onClick={handleSignUp} />
+          title="Cadastrar" onClick={handleSignUp} >
+          Cadastrar
+        </button>
 
 
         <Link to="/" >Voltar para o login </Link>
