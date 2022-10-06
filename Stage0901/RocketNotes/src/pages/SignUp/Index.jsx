@@ -25,8 +25,16 @@ export function SignUp() {
           icon={FiUser}
           onChange={e => setName(e.target.value)}
         />
-        <Input placeholder="E-mail" type="text" icon={FiMail} />
-        <Input placeholder="Senha" type="password" icon={FiLock} />
+        <Input
+          placeholder="E-mail"
+          type="text" icon={FiMail}
+
+        />
+        <Input
+          placeholder="Senha"
+          type="password" icon={FiLock}
+
+        />
         <Button title="Cadastrar" />
 
         <Link to="/" >Voltar para o login</Link>
