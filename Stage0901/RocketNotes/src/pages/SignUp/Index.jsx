@@ -11,7 +11,6 @@ export function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-
   return (
     <Container>
       <Background />
@@ -20,7 +19,12 @@ export function SignUp() {
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
         <h2>Crie sua conta</h2>
 
-        <Input placeholder="Nome" type="text" icon={FiUser} />
+        <Input
+          placeholder="Nome"
+          type="text"
+          icon={FiUser}
+          onChange={e => setName(e.target.value)}
+        />
         <Input placeholder="E-mail" type="text" icon={FiMail} />
         <Input placeholder="Senha" type="password" icon={FiLock} />
         <Button title="Cadastrar" />
