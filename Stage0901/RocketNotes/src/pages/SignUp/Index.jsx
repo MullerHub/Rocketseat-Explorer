@@ -11,6 +11,10 @@ export function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  function handleSignUp() {
+    console.log(name, email, password)
+  }
+
   return (
     <Container>
       <Background />
