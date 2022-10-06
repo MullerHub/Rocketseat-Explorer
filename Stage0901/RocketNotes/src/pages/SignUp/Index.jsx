@@ -5,7 +5,7 @@ import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { Background, Container, Form } from './styles'
-import { api } from '../../services'
+import { api } from '../../services/api'
 
 export function SignUp() {
   const [name, setName] = useState("")
