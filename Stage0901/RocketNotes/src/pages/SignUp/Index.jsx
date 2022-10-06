@@ -8,6 +8,9 @@ import { Background, Container, Form } from './styles'
 
 export function SignUp() {
   const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+
+
   return (
     <Container>
       <Background />
