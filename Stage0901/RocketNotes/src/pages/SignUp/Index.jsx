@@ -5,6 +5,7 @@ import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
 import { Background, Container, Form } from './styles'
+import { api } from '../../services'
 
 export function SignUp() {
   const [name, setName] = useState("")
@@ -12,7 +13,21 @@ export function SignUp() {
   const [password, setPassword] = useState("")
 
   function handleSignUp() {
-    console.log(name, email, password)
+
+    if (!name || !email || !password) {
+      return alert("Preencha todos os campos!")
+    }
+
+    api.post("users", { name, email, password }).then(() => {
+      alert("usuario cadastrado")
+    })
+      .catch(error => {
+        if (error.response) {
+          alert(error.response.data.message)
+        } else {
+          alert("Não foi possivel cadastrar")
+        }
+      })
   }
 
   return (
@@ -22,7 +37,6 @@ export function SignUp() {
         <h1>Rocket Notes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
         <h2>Crie sua conta</h2>
-
         <Input
           placeholder="Nome"
           type="text"
@@ -42,12 +56,11 @@ export function SignUp() {
           onChange={e => setPassword(e.target.value)}
         />
 
-        <Button
-          title="Cadastrar"
-          onClick={handleSignUp}
-        />
+        <button
+          title="Cadastrar" type='button' onClick={handleSignUp} />
 
-        <Link to="/" >Voltar para o login</Link>
+
+        <Link to="/" >Voltar para o login </Link>
       </Form>
     </Container>
   )
