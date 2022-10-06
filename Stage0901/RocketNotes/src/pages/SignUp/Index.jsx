@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
@@ -6,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { Background, Container, Form } from './styles'
 
 export function SignUp() {
+  const [name, setName] = useState("")
   return (
     <Container>
       <Background />
