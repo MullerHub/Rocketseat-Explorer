@@ -12,13 +12,15 @@ export function SignIn() {
   const [password, setPassword] = useState("")
 
   const { signIn } = useAuth()
-  function handleSignIn() {
-    signIn({})
+
+  function handleSignIn(e) {
+    e.preventDefault()
+    signIn({ email, password })
   }
 
   return (
     <Container>
-      <Form>
+      <Form onSubmit={handleSignIn}>
         <h1>Rocket Notes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
         <h2>Faça seu login</h2>
@@ -35,7 +37,7 @@ export function SignIn() {
           icon={FiLock}
           onChange={e => setPassword(e.target.value)}
         />
-        <Button title="Entrar" />
+        <Button title="Entrar" type="submit" />
 
         <Link to="/register">Criar conta</Link>
       </Form>

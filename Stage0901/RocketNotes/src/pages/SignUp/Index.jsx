@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -59,10 +60,10 @@ export function SignUp() {
           onChange={e => setPassword(e.target.value)}
         />
 
-        <button
-          title="Cadastrar" onClick={handleSignUp} >
-          Cadastrar
-        </button>
+        <Button
+          title="Cadastrar (não funciona) " onClick={handleSignUp} >
+          Cadastrar <br /> (botão ta errado)
+        </Button>
 
 
         <Link to="/" >Voltar para o login </Link>

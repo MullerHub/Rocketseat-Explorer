@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
       <GLobalStyles />
       <AuthProvider>
+
         <Routes />
       </AuthProvider>
     </ThemeProvider>
