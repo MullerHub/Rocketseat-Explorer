@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-export const AuthContext = createContext({})
+const AuthContext = createContext({})
 
 function AuthProvider({ children }) {
   return (
@@ -9,3 +9,5 @@ function AuthProvider({ children }) {
     </AuthContext.Provider>
   )
 }
+
+export { AuthProvider }

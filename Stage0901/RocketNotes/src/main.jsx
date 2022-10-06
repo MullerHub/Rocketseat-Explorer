@@ -5,13 +5,16 @@ import theme from './styles/theme'
 import React from 'react'
 import './styles/global'
 
+import { AuthProvider } from './hooks/auth'
 import { Routes } from './routes'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GLobalStyles />
-      <Routes />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>
 )
