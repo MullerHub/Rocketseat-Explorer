@@ -17,17 +17,18 @@ function AuthProvider({ children }) {
       api.defaults.headers.authorization = `Bearer ${token}`
       console.log(user, token)
       setData({ user, token })
-
-
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message)
-
       } else {
         alert("Não foi possivel logar")
       }
     }
   }
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <AuthContext.Provider value={{ signIn, user: data.user }}>
