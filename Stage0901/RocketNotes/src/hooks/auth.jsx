@@ -33,6 +33,11 @@ function AuthProvider({ children }) {
     if (token && user) {
       api.defaults.headers.authorization = `Bearer ${token}`
     }
+
+    setData({
+      token,
+      user: JSON.parse(user)
+    })
   }, [])
 
   return (
