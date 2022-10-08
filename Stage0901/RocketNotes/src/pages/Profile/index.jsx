@@ -25,13 +25,15 @@ export function Profile() {
       password: passwordNew,
       old_password: passwordOld,
     }
-    await updateProfile({ user })
+    await updateProfile({ user, avatarFile })
   }
 
   function handleChangeAvatar(event) {
-
     const file = event.target.files[0]
     setAvatarFile(file)
+
+    const imagePreview = URL.createObjectURL(file)
+    setAvatar(imagePreview)
   }
   return (
     <Container>
