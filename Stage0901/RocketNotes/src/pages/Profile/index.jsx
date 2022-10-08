@@ -28,8 +28,7 @@ export function Profile() {
     await updateProfile({ user })
   }
 
-  async function handleChangeAvatar(e) {
-    e.preventDefault()
+  function handleChangeAvatar(event) {
 
     const file = event.target.files[0]
     setAvatarFile(file)
@@ -45,13 +44,13 @@ export function Profile() {
       <Form>
         <Avatar>
           <img
-            src="https://www.github.com/mullerhub.png"
+            src={avatar}
             alt="Foto de perfil"
           />
           <label htmlFor="avatar">
             <FiCamera />
 
-            <input id="avatar" type="file" />
+            <input id="avatar" type="file" onChange={handleChangeAvatar} />
           </label>
         </Avatar>
 
