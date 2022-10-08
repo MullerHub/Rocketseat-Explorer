@@ -2,10 +2,19 @@ import { Container, Form, Avatar } from './styles'
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
+import { useState } from 'react'
+import { useAuth } from '../../hooks/auth'
+
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function Profile() {
+  const { user } = useAuth()
+  const [name, setName] = useState(user.name)
+  const [email, setEmail] = useState(user.email)
+  const [passwordOld, setPasswordOld] = useState()
+  const [passwordNew, setPasswordNew] = useState()
+
   return (
     <Container>
       <header>
