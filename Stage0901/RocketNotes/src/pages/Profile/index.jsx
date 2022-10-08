@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import { useState } from 'react'
 import { useAuth } from '../../hooks/auth'
+import avatarPlaceholder from '../../assets/user.svg'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -46,7 +47,7 @@ export function Profile() {
       <Form>
         <Avatar>
           <img
-            src={avatar}
+            src={avatarPlaceholder}
             alt="Foto de perfil"
           />
           <label htmlFor="avatar">
