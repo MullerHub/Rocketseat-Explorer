@@ -28,7 +28,7 @@ export function Profile() {
     await updateProfile({ user })
   }
 
-  async function handleUpdate(e) {
+  async function handleChangeAvatar(e) {
     e.preventDefault()
 
     const file = event.target.files[0]
