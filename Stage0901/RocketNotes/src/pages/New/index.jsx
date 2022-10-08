@@ -13,7 +13,7 @@ import { Button } from '../../components/Button'
 
 export function New() {
 
-  const [title, setTitle] = useState("")
+  const [title, setTitle] = useState([])
   const [description, setDescription] = useState("")
 
   const [links, setLinks] = useState([])
@@ -22,7 +22,7 @@ export function New() {
   const [tags, setTags] = useState([])
   const [newTag, setNewTag] = useState("")
 
-  const navigate = useNavigate()s
+  const navigate = useNavigate()
 
   function handleAddTag() {
     setTags(prevState => [...prevState, newTag])
@@ -43,6 +43,17 @@ export function New() {
   }
 
   async function handleNewNote() {
+
+    if (newTag) {
+      return alert("Você deixou uma tag sem adicionar, adicione se quiser")
+
+    }
+
+    if (newLink) {
+      return alert("Você deixou um link sem adicionar, adicione se quiser")
+    }
+
+
     await api.post("/notes", {
       title,
       description,
@@ -59,7 +70,9 @@ export function New() {
       <Header />
 
       <main>
-        <Form>
+        <Form
+          onSubmit={handleNewNote}
+        >
           <header>
             <h1>Criar nota</h1>
             <Link to="/">Voltar</Link>
@@ -116,7 +129,6 @@ export function New() {
             </div>
           </Section>
           <Button
-            type="submit"
             title="Salvar"
             onClick={handleNewNote}
           />
