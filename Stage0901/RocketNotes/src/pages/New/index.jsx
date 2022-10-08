@@ -11,9 +11,10 @@ import { Button } from '../../components/Button'
 
 export function New() {
   const [links, setLinks] = useState([])
+  const [newLink, setNewLink] = useState([])
 
   function handleAddLinks() {
-    setLinks(prevState => [...prevState])
+    setLinks(prevState => [...prevState, newLink])
 
   }
 
