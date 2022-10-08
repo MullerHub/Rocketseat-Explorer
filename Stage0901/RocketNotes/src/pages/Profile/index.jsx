@@ -49,7 +49,7 @@ export function Profile() {
           type="text"
           icon={FiMail}
           value={email}
-          onChange={e => set(e.target.value)}
+          onChange={e => setEmail(e.target.value)}
         />
 
         <Input
