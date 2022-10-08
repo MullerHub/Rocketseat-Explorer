@@ -40,7 +40,7 @@ export function Profile() {
           placeholder="Nome"
           type="text"
           icon={FiUser}
-          value={ }
+          value={name}
         />
 
         <Input
