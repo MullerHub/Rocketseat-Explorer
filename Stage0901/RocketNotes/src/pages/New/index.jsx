@@ -20,13 +20,13 @@ export function New() {
   const [newLink, setNewLink] = useState("")
 
   const [tags, setTags] = useState([])
-  const [newTag, setNewLTag] = useState("")
+  const [newTag, setNewTag] = useState("")
 
-  const navigate = useNavigate()
+  const navigate = useNavigate()s
 
   function handleAddTag() {
     setTags(prevState => [...prevState, newTag])
-    setNewLTag("")
+    setNewTag("")
   }
 
   function handleAddLinks() {
@@ -109,15 +109,16 @@ export function New() {
               <NoteItem
                 isNew
                 placeholder="Nova tag"
-                onChange={e => setNewLTag(e.target.value)}
+                onChange={e => setNewTag(e.target.value)}
                 value={newTag}
                 onClick={handleAddTag}
               />
             </div>
           </Section>
           <Button
+            type="submit"
             title="Salvar"
-            handleNewNote
+            onClick={handleNewNote}
           />
         </Form>
       </main>
