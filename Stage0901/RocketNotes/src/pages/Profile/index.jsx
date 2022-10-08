@@ -56,6 +56,7 @@ export function Profile() {
           placeholder="Senha atual"
           type="password"
           icon={FiLock}
+          onChange={e => setPasswordOld(e.target.value)}
 
         />
 
