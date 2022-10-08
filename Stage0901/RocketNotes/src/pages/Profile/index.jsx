@@ -35,6 +35,7 @@ export function Profile() {
             <input id="avatar" type="file" />
           </label>
         </Avatar>
+
         <Input
           placeholder="Nome"
           type="text"
