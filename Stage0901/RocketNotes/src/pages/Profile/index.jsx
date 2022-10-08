@@ -41,6 +41,7 @@ export function Profile() {
           type="text"
           icon={FiUser}
           value={name}
+          onChange={e => setName(e.target.value)}
         />
 
         <Input
@@ -48,6 +49,7 @@ export function Profile() {
           type="text"
           icon={FiMail}
           value={email}
+          onChange={e => set(e.target.value)}
         />
 
         <Input
