@@ -15,7 +15,11 @@ export function New() {
 
   function handleAddLinks() {
     setLinks(prevState => [...prevState, newLink])
+    setNewLink("")
+  }
 
+  function handleRemoveLink(deleted) {
+    setLinks(prevState => prevState.filter())
   }
 
   return (
@@ -32,8 +36,23 @@ export function New() {
           <Textarea placeholder="Observações" />
 
           <Section title="Links úteis" >
-            <NoteItem value="www.instagram.com/dj.muller_" />
-            <NoteItem isNew placeholder="Novo Link" />
+            {
+              links.map((link, index) => (
+                <NoteItem
+                  key={String(index)}
+                  value={link}
+                  onClick={() => { }}
+                />
+              ))
+            }
+            <NoteItem
+              isNew
+              placeholder="Novo links"
+              value={newLink}
+              onChange={e => setNewLink(e.target.value)}
+              onClick={handleAddLinks}
+            />
+
           </Section>
 
           <Section title="Marcadores" >
