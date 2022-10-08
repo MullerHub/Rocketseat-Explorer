@@ -36,8 +36,15 @@ function AuthProvider({ children }) {
   async function updateProfile({ user }) {
     try {
 
-    } catch () {
+      await api.put("/users", user)
+      localStorage.setItem("@rocketnotes:user",)
 
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.message)
+      } else {
+        alert("Não foi possivel atualizar o perfil.")
+      }
     }
   }
 
