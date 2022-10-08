@@ -40,14 +40,14 @@ export function Profile() {
           placeholder="Nome"
           type="text"
           icon={FiUser}
-
+          value={ }
         />
 
         <Input
           placeholder="E-mail"
           type="text"
           icon={FiMail}
-
+          value={ }
         />
 
         <Input
