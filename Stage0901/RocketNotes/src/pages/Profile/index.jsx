@@ -15,14 +15,15 @@ export function Profile() {
   const [passwordOld, setPasswordOld] = useState()
   const [passwordNew, setPasswordNew] = useState()
 
-  async function handleUpdate() {
+  async function handleUpdate(e) {
+    e.preventDefault()
     const user = {
       name,
       email,
       password: passwordNew,
       old_password: passwordOld,
     }
-    await updateProfile({})
+    await updateProfile({ user })
   }
 
   return (
@@ -79,7 +80,11 @@ export function Profile() {
         />
 
 
-        <Button title="Salvar" />
+        <Button
+          title="Salvar"
+          type="button"
+          onClick={handleUpdate}
+        />
       </Form>
     </Container>
   )
