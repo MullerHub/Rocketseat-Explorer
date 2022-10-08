@@ -1,6 +1,8 @@
 import { Container, Form } from './styles'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { api } from '../../services/api'
+import { useNavigate } from 'react-router-dom'
 
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -20,6 +22,8 @@ export function New() {
   const [tags, setTags] = useState([])
   const [newTag, setNewLTag] = useState("")
 
+  const navigate = useNavigate()
+
   function handleAddTag() {
     setTags(prevState => [...prevState, newTag])
     setNewLTag("")
@@ -36,6 +40,18 @@ export function New() {
 
   function handleRemoveTag(tagDeleted) {
     setTags(prevState => prevState.filter(link => link !== tagDeleted))
+  }
+
+  async function handleNewNote() {
+    await api.post("/notes", {
+      title,
+      description,
+      tags,
+      links
+    })
+
+    alert("Nota criada com sucesso!")
+    navigate("/")
   }
 
   return (
@@ -99,7 +115,10 @@ export function New() {
               />
             </div>
           </Section>
-          <Button title="Salvar" />
+          <Button
+            title="Salvar"
+            handleNewNote
+          />
         </Form>
       </main>
 
