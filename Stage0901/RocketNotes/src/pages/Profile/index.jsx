@@ -14,6 +14,7 @@ export function Profile() {
   const [email, setEmail] = useState(user.email)
   const [passwordOld, setPasswordOld] = useState()
   const [passwordNew, setPasswordNew] = useState()
+  const [avatar, setAvatar] = useState(null)
 
   async function handleUpdate(e) {
     e.preventDefault()
