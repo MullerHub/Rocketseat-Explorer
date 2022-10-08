@@ -11,6 +11,11 @@ import { api } from '../../services/api'
 
 export function Home() {
   const [tags, setTags] = useState([])
+  const [tagsSelected, setTagsSelected] = useState([])
+
+  function handleTagSelected(tagName) {
+    setTagsSelected([tagName])
+  }
 
   useEffect(() => {
     async function fetchTags() {
@@ -31,9 +36,8 @@ export function Home() {
         <li>
           <ButtonText title="Todos temporario" isActive />
         </li>
-
         <ButtonText title="Nada temporario" />
-
+        {/* Nunca vi tanto erro */}
         {
           tags && tags.map(tag => (
             <li key={String(tag.id)} >
