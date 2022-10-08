@@ -34,14 +34,21 @@ export function Home() {
       <Header />
       <Menu>
         <li>
-          <ButtonText title="Todos temporario" isActive />
+          <ButtonText title="Todos temporario"
+            onClick={() => handleTagSelected("all")}
+            isActive
+          />
         </li>
         <ButtonText title="Nada temporario" />
         {/* Nunca vi tanto erro */}
+
         {
           tags && tags.map(tag => (
             <li key={String(tag.id)} >
-              <ButtonText title={tag.name} />
+              <ButtonText
+                title={tag.name}
+                onClick={() => handleTagSelected(tag.name)}
+              />
             </li>
           )
           )
