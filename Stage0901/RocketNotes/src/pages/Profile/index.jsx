@@ -47,7 +47,7 @@ export function Profile() {
           placeholder="E-mail"
           type="text"
           icon={FiMail}
-          value={ }
+          value={email}
         />
 
         <Input
