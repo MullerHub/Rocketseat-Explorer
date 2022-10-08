@@ -1,6 +1,6 @@
 import { Container, Form } from './styles'
 import { Link } from 'react-router-dom'
-
+import { useState } from 'react'
 
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -10,6 +10,12 @@ import { Section } from '../../components/Section'
 import { Button } from '../../components/Button'
 
 export function New() {
+  const [links, setLinks] = useState([])
+
+  function handleAddLinks() {
+    setLinks(prevState => [...prevState])
+  }
+
   return (
     <Container>
       <Header />
