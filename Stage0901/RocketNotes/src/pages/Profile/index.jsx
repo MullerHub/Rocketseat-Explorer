@@ -14,7 +14,8 @@ export function Profile() {
   const [email, setEmail] = useState(user.email)
   const [passwordOld, setPasswordOld] = useState()
   const [passwordNew, setPasswordNew] = useState()
-  const [avatar, setAvatar] = useState(null)
+  const [avatar, setAvatar] = useState(user.avatar)
+  const [avatarFile, setAvatarFile] = useState(null)
 
   async function handleUpdate(e) {
     e.preventDefault()
@@ -27,6 +28,12 @@ export function Profile() {
     await updateProfile({ user })
   }
 
+  async function handleUpdate(e) {
+    e.preventDefault()
+
+    const file = event.target.files[0]
+    setAvatarFile(file)
+  }
   return (
     <Container>
       <header>
