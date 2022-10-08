@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useAuth } from '../../hooks/auth'
 import avatarPlaceholder from '../../assets/user.svg'
+import { api } from '../../services/api'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -15,7 +16,9 @@ export function Profile() {
   const [email, setEmail] = useState(user.email)
   const [passwordOld, setPasswordOld] = useState()
   const [passwordNew, setPasswordNew] = useState()
-  const [avatar, setAvatar] = useState(user.avatar)
+
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+  const [avatar, setAvatar] = useState(avatarUrl)
   const [avatarFile, setAvatarFile] = useState(null)
 
   async function handleUpdate(e) {
@@ -47,7 +50,7 @@ export function Profile() {
       <Form>
         <Avatar>
           <img
-            src={avatarPlaceholder}
+            src={avatar}
             alt="Foto de perfil"
           />
           <label htmlFor="avatar">
