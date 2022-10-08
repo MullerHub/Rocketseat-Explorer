@@ -9,11 +9,21 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function Profile() {
-  const { user } = useAuth()
+  const { user, updateProfile } = useAuth()
   const [name, setName] = useState(user.name)
   const [email, setEmail] = useState(user.email)
   const [passwordOld, setPasswordOld] = useState()
   const [passwordNew, setPasswordNew] = useState()
+
+  async function handleUpdate() {
+    const user = {
+      name,
+      email,
+      password: passwordNew,
+      old_password: passwordOld,
+    }
+    await updateProfile({})
+  }
 
   return (
     <Container>
