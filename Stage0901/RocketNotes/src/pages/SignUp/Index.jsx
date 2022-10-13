@@ -62,7 +62,6 @@ export function SignUp() {
 
         <Button
           title="Cadastrar (não funciona) " onClick={handleSignUp} >
-          Cadastrar <br /> (botão ta errado)
         </Button>
 
 
