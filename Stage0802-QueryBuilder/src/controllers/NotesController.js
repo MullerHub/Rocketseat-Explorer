@@ -54,7 +54,7 @@ class NotesController {
 
     await knex('notes').where({ id }).delete()
 
-    return response.json()
+    return response.json({ message: 'Note delete completed' })
   }
 
   async index(request, response) {
