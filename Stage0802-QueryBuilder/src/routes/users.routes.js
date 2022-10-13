@@ -14,6 +14,7 @@ const userAvatarController = new UserAvatarController()
 
 usersRoutes.post('/', usersController.create)
 usersRoutes.put('/', ensureAuthenticated, usersController.update)
+// ERRO EM ADICIONAR AVATAR
 usersRoutes.patch(
   '/avatar',
   ensureAuthenticated,
